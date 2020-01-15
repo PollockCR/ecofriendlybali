@@ -37,7 +37,7 @@ analytics: false
 
 # Compress CSS
 sass:
-  style: compact
+  style: compressed
   sass_dir: _sass
 
 # Compress HTML (in liquid via layouts/compress.html)
