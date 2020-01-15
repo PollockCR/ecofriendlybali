@@ -1,5 +1,5 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<ul class="navbar-nav">
+<ul class="navbar-nav ml-auto">
 {% for item in include.navigation %}
   <li class="nav-item">
     <a class="nav-link" href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
