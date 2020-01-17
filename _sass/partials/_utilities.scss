@@ -7,3 +7,22 @@
 .zindex-fixed {
   z-index: $zindex-fixed;
 }
+
+.navbar-banner {
+  background-color: $dark;
+}
+
+.banner-lg-vh-100 {
+  height: calc(100vh - 100px);
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-banner {
+    position: absolute;
+    background-color: transparent;
+  }
+
+  .banner-lg-vh-100 {
+    height: 100vh;
+  }
+}

@@ -1,9 +1,9 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark
   {% if page.banner %}
-  position-absolute w-100 zindex-fixed
+  w-100 zindex-fixed navbar-banner
   {% else %}
-  bg-primary
+  bg-dark
   {% endif %}
   ">
     <a href="{{ '/' | relative_url }}" aria-label="Go to homepage" class="navbar-brand">
