@@ -9,4 +9,5 @@ intro_paragraph: >
   Features [Netlify CMS](https://www.netlifycms.org), responsive
   CSS Grid layout, sample
   pages and posts, and a continuous deployment workflow.
+banner_image_path: /assets/img/uploads/forest.jpg
 ---

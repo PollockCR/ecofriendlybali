@@ -1,7 +1,11 @@
 <header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    
+  <nav class="navbar navbar-expand-lg navbar-dark
+  {% if page.banner_image_path %}
+  position-absolute w-100 zindex-fixed
+  {% else %}
+  bg-primary
+  {% endif %}
+  ">
     <a href="{{ '/' | relative_url }}" aria-label="Go to homepage" class="navbar-brand">
       <img src="{{ site.logo | escape }}" alt="Eco-Friendly Bali Logo" style="width: 213px;">
     </a>
@@ -13,6 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       {% include navigation.html navigation=site.data.navigation %}
     </div>
+
   </nav>
 
 </header>
