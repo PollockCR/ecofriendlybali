@@ -16,8 +16,7 @@
 title: Eco-Friendly Bali
 email: catherine@catherinepollock.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
+  Find sustainable accommodation, restaurants, shops, and services in Bali.
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
 logo: "/assets/img/uploads/eco-friendly-bali-logo.png"
 url: "https://ecofriendlybali.com" # the base hostname & protocol for your site, e.g. https://example.com
