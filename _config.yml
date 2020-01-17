@@ -24,6 +24,11 @@ url: "https://ecofriendlybali.com" # the base hostname & protocol for your site,
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
 
+# collections
+collections:
+  biz:
+    output: true
+
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
 section: true
