@@ -1,9 +1,12 @@
 ---
-layout: post
+layout: biz
 title: Banyan Tree
 author: catherine_pollock
 date: '2020-01-17 12:00:00'
-categories: accommodation, hotel, EarthCheck certified
+categories:
+  - accommodation
+  - hotel
+  - EarthCheck certified
 practices: plastic-free, resource conservation, tree-planting, on-site organic garden, community support, cleanups, turtle conservation
 location: Ungasan
 contact:
