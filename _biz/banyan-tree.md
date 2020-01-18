@@ -3,15 +3,12 @@ layout: biz
 title: Banyan Tree
 author: catherine_pollock
 date: '2020-01-17 12:00:00'
-categories:
+services:
   - accommodation
   - hotel
   - restaurant
   - cooking class
   - spa
-  - EarthCheck Certification
-  - National Green Hotel Award
-  - Tri Hita Karana Award
 practices:
   - plastic-free
   - resource conservation
@@ -20,6 +17,9 @@ practices:
   - community support
   - cleanups
   - turtle conservation
+  - EarthCheck Certification
+  - National Green Hotel Award
+  - Tri Hita Karana Award
 locations:
   - Ungasan
 contact:

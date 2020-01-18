@@ -28,6 +28,8 @@ permalink: /blog/:title
 collections:
   biz:
     output: true
+  services:
+    output: true
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)

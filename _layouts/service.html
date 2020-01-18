@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container">
+    <h1>{{page.title}}</h1>
+
+    <div class="row">
+
+      {% for biz in site.biz %}
+      {% if biz.services contains page.service %}
+      {% include archive-loop-item.html %}
+      {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

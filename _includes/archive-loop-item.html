@@ -1,0 +1,15 @@
+
+<!-- this is the archive loop item. By putting it in an include, it means that we can just write the code once and ensure it looks good everywhere we use it on the site. -->
+
+<div class="col-md-4">
+    <a href="{{biz.url}}">
+      <div class="bg-image" style="background-image:url('{{post.image_path}}')"> </div>
+      <h3> {{biz.title}} </h3>
+      <p>
+      {% for category in biz.categories %}
+        <a href="/categories/{{category | slugify}}" class="category"> {{category}} </a>
+      {% endfor %}
+      </p>
+      <p> {{biz.excerpt | strip_html | truncate:100 }} </p>
+    </a>
+  </div>
