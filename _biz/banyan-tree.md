@@ -6,18 +6,44 @@ date: '2020-01-17 12:00:00'
 categories:
   - accommodation
   - hotel
-  - EarthCheck certified
-practices: plastic-free, resource conservation, tree-planting, on-site organic garden, community support, cleanups, turtle conservation
-location: Ungasan
+  - restaurant
+  - cooking class
+  - spa
+  - EarthCheck Certification
+  - National Green Hotel Award
+  - Tri Hita Karana Award
+practices:
+  - plastic-free
+  - resource conservation
+  - tree-planting
+  - on-site organic garden
+  - community support
+  - cleanups
+  - turtle conservation
+locations:
+  - Ungasan
 contact:
-  address: Jl. Melasti Banjar Kelod, Ungasan, Bali - Indonesia 80364
+  address:
+    - Jl. Melasti Banjar Kelod, Ungasan, Bali - Indonesia 80364
+  address_url:
+    - https://goo.gl/maps/TMd85dQouMJ3Efno9
   website: www.banyantree.com/en/indonesia/ungasan-bali
-  phones:
+  phone:
     - '+62 361 300 7000'
     - '+62 361 300 7001'
     - '+62 361704477'
     - '+62 81139602828'
+  social_media:
+    facebook_url: https://www.facebook.com/BanyanTreeHotels
+    instagram_url: http://instagram.com/banyantreehotels
+    pinterest_url: http://www.pinterest.com/banyantreelife/
+    twitter_url: https://twitter.com/Banyan_Tree
+    youtube_url: http://www.youtube.com/user/BanyanTreeHotels
+    weibo_url: http://weibo.com/banyantree
+    youku_url: http://i.youku.com/banyantree
 more_info: https://www.banyantree.com/en/indonesia/ungasan-bali/sustainability
+featured_image_path: /assets/uploads/biz/banyan-tree.jpg
+map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.363807988442!2d115.15708231545243!3d-8.845679993648126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25b11fffcae07%3A0x7e5477c107cdd31d!2sBanyan%20Tree%20Ungasan%20Bali!5e0!3m2!1sen!2ses!4v1579351977371!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

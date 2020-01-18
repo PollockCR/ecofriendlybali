@@ -5,12 +5,34 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 
-<!-- this automatically outputs each category tag -->
 <p>
-  {% for category in page.categories %}
-    <a href="/archives/{{category | slugify }}" class="category"> {{category}} </a>
+  Categories: {{ page.categories | array_to_sentence_string  }}
+</p>
+
+<p>
+  Green Practices: {{ page.practices | array_to_sentence_string  }}
+</p>
+
+<p>
+  Locations: {{ page.locations | array_to_sentence_string  }}
+</p>
+
+  {% for location in page.locations %}
+
+  <a href="#" class="location">{{ location }}</a>
+  <p>
+  {% if page.contact.address_url[forloop.index0] %}
+  <a target="_blank" href="{{ page.contact.address_url }}">
+    {% endif %}
+    {% if page.contact.address[forloop.index0] %}
+    {{ page.contact.address[forloop.index0] }}
+    {% endif %}
+    {% if page.contact.address[forloop.index0] %}
+  </a>
+  {% endif %}
+  </p>
+
   {% endfor %}
-</p> <!-- end categories -->
 
 {% include page-intro.html %}
 
@@ -19,14 +41,14 @@ layout: default
 <nav aria-label="Adjacent Posts">
   <ul>
     {% if page.previous.url %}
-      <li>
-        <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
-      </li>
+    <li>
+      <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
+    </li>
     {% endif %}
     {% if page.next.url %}
-      <li>
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
-      </li>
+    <li>
+      <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
+    </li>
     {% endif %}
   </ul>
 </nav>
