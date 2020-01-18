@@ -12,3 +12,8 @@ $font-family-sans-serif: 'Lato', Roboto, sans-serif;
 
 // font sizes
 $enable-responsive-font-sizes: true;
+
+// Links
+$link-color: $primary;
+$link-hover-decoration: none;
+$link-hover-color:                        darken($link-color, 25%);

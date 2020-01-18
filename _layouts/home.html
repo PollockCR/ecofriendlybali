@@ -5,10 +5,14 @@ layout: default
 {% include banner.html %}
 <!-- Photo by Frans Daniels on Unsplash https://unsplash.com/photos/xBgoj_jPoMU -->
 
-<h2>{{ page.title }}</h2>
+<div class="container">
 
-  {% include page-intro.html %}
+  <h2>{{ page.title }}</h2>
 
-  {{ content }}
+    {% include page-intro.html %}
 
-  {% include blog-featured.html %}
+    {{ content }}
+
+    {% include blog-featured.html %}
+    
+</div>

@@ -5,6 +5,15 @@
   min-height: 10rem;
 }
 
+.bg-darken {
+  -webkit-filter: brightness(60%); /* Safari 6.0 - 9.0 */
+  filter: brightness(60%);
+}
+
+.bg-white-transparent {
+  background-color: rgba($white, 0.5);
+}
+
 .zindex-fixed {
   z-index: $zindex-fixed;
 }
@@ -13,7 +22,7 @@
   background-color: $dark;
 }
 
-.banner-lg-vh-100 {
+.banner {
   height: calc(100vh - 100px);
 }
 
@@ -23,7 +32,7 @@
     background-color: transparent;
   }
 
-  .banner-lg-vh-100 {
+  .banner-transparent-header {
     height: 100vh;
   }
 }

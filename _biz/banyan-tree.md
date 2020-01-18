@@ -21,12 +21,11 @@ practices:
   - National Green Hotel Award
   - Tri Hita Karana Award
 locations:
-  - Ungasan
+  - area: Ungasan
+    address: Jl. Melasti Banjar Kelod, Ungasan, Bali - Indonesia 80364
+    address_url: https://goo.gl/maps/TMd85dQouMJ3Efno9
+    map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.363807988442!2d115.15708231545243!3d-8.845679993648126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25b11fffcae07%3A0x7e5477c107cdd31d!2sBanyan%20Tree%20Ungasan%20Bali!5e0!3m2!1sen!2ses!4v1579351977371!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 contact:
-  address:
-    - Jl. Melasti Banjar Kelod, Ungasan, Bali - Indonesia 80364
-  address_url:
-    - https://goo.gl/maps/TMd85dQouMJ3Efno9
   website: www.banyantree.com/en/indonesia/ungasan-bali
   phone:
     - '+62 361 300 7000'
@@ -43,7 +42,12 @@ contact:
     youku_url: http://i.youku.com/banyantree
 more_info: https://www.banyantree.com/en/indonesia/ungasan-bali/sustainability
 image_path: /assets/img/uploads/biz/banyan-tree.jpg
-map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.363807988442!2d115.15708231545243!3d-8.845679993648126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25b11fffcae07%3A0x7e5477c107cdd31d!2sBanyan%20Tree%20Ungasan%20Bali!5e0!3m2!1sen!2ses!4v1579351977371!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+banner:
+  image_path: /assets/img/uploads/biz/banyan-tree.jpg
+  text:
+  transparent_header: false
+  darken: true
+  text_shadow: true
 
 ---
 The Banyan Tree is a five-star luxury hotel in Unagasan, Bali. Their earth-friendly practices have earned them several certifications and awards. The [Banyan Tree Global Foundation](http://www.banyantreeglobalfoundation.com) focuses on works to improve their community and environment through sustainable development. According to the hotel's [Sustainability page](https://www.banyantree.com/en/indonesia/ungasan-bali/sustainability):

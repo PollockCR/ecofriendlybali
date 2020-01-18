@@ -3,36 +3,50 @@ layout: default
 ---
 {% assign author = site.data.authors[page.author] %}
 
-<h2>{{ page.title }}</h2>
+{% include banner.html %}
 
+<div class="biz-archive-links container">
+  <div class="row">
+
+    <div class="col-md-3">
+      <h2>Services:</h2>
+      {% for service in page.services %}
+      <h3><a href="/services/{{service | slugify }}" class="service"> {{service}} </a></h3>
+      {% endfor %}
+    </div>
+
+    <div class="col-md-6">
+      <h2>Green Practices:</h2>
+      {% for practice in page.practices %}
+      <h3><a href="/practices/{{practice | slugify }}" class="practice"> {{practice}} </a></h3>
+      {% endfor %}
+    </div>
+
+    <div class="col-md-3">
+      <h2>Locations:</h2>
+      {% for location in page.locations %}
+      <h3><a href="/location/{{location.area | slugify }}" class="location"> {{location.area}} </a></h3>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+{% for location in page.locations %}
 <p>
-  Categories: {{ page.categories | array_to_sentence_string  }}
-</p>
-
-<p>
-  Green Practices: {{ page.practices | array_to_sentence_string  }}
-</p>
-
-<p>
-  Locations: {{ page.locations | array_to_sentence_string  }}
-</p>
-
-  {% for location in page.locations %}
-
-  <a href="#" class="location">{{ location }}</a>
-  <p>
-  {% if page.contact.address_url[forloop.index0] %}
-  <a target="_blank" href="{{ page.contact.address_url }}">
+  {{ location.area }}: 
+  {% if location.address_url %}
+  <a target="_blank" href="{{ location.address_url }}">
     {% endif %}
-    {% if page.contact.address[forloop.index0] %}
-    {{ page.contact.address[forloop.index0] }}
+    {% if location.address %}
+    {{ location.address }}
     {% endif %}
-    {% if page.contact.address[forloop.index0] %}
+    {% if location.address_url %}
   </a>
   {% endif %}
-  </p>
+</p>
 
-  {% endfor %}
+{% endfor %}
 
 {% include page-intro.html %}
 

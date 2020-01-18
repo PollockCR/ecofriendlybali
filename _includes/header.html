@@ -1,11 +1,13 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark
-  {% if page.banner %}
+  {% if page.banner.transparent_header %}
   w-100 zindex-fixed navbar-banner
   {% else %}
   bg-dark
   {% endif %}
   ">
+  <div class="container">
+
     <a href="{{ '/' | relative_url }}" aria-label="Go to homepage" class="navbar-brand">
       <img src="{{ site.logo | escape }}" alt="Eco-Friendly Bali Logo" style="width: 213px;">
     </a>
@@ -18,6 +20,9 @@
       {% include navigation.html navigation=site.data.navigation %}
     </div>
 
-  </nav>
+
+  </div>
+
+</nav>
 
 </header>

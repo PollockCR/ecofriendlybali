@@ -1,17 +1,42 @@
-<section class="bg-img banner-lg-vh-100 d-table w-100 text-white" style="background-image: url('{{ page.banner.image_path }}')">
+{% if page.banner.image_path %}
+<section class="banner position-relative text-white text-center
+{% if page.banner.transparent_header %}
+banner-transparent-header
+{% endif %}
+">
+<div class="bg-img w-100 h-100 position-absolute
+{% if page.banner.darken %}
+bg-darken
+{% endif %}
+" style="background-image: url('{{ page.banner.image_path }}')">
 
-  <div class="container h-100">
+</div>
 
-    <div class="row h-100 align-items-center justify-content-center">
+<div class="container h-100">
 
-      <div class="col-md-10 col-lg-9">
+  <div class="row h-100 align-items-center justify-content-center">
 
-        <h1 class="display-3 text-center text-shadow">{{ page.banner.text }}</h1>
-      </div>
+    <div class="col-md-10 col-lg-11">
 
-    </div>
-
+      <h1 class="display-2
+      {% if page.banner.text-shadow %}
+      text-shadow
+      {% endif %}
+      ">
+      {% if page.banner.text %}
+      {{ page.banner.text }}
+      {% else %}
+      {{ page.title }}
+      {% endif %}
+    </h1>
 
   </div>
 
+</div>
+
+</div>
+
 </section>
+{% else %}
+<h1>{{ page.title }}</h1>
+{% endif %}
