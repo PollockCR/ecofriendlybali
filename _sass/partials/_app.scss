@@ -16,6 +16,10 @@ a.service, a.location, a.practice {
   border-radius: $border-radius;
   @extend .btn;
   margin-right: $spacer;
+  @include hover {
+    border-color: $white;
+    color: $white;
+  }
 }
 
 
