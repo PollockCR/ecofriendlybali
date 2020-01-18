@@ -4,21 +4,18 @@
 // CSS Grid is used for the layout with fallbacks for less capable browsers
 // declared beforehand, and a @supports feature query to reset fallbacks when
 // necessary. https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks
-.biz-archive-links {
-  h2, h3 {
-    display: inline-block;
-    font-family: $font-family-base;
-    vertical-align: middle;
-  }
+
+.biz-archive-link {
+  display: inline-block;
 }
 
 a.service, a.location, a.practice {
-  background-color: $primary;
-  color: $white;
+  background-color: $white;
+  font-family: $font-family-base;
+  border-color: $white;
   border-radius: $border-radius;
   @extend .btn;
-  @extend .btn-primary;
-  margin-left: $spacer;
+  margin-right: $spacer;
 }
 
 

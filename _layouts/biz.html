@@ -5,36 +5,19 @@ layout: default
 
 {% include banner.html %}
 
-<div class="biz-archive-links container">
-  <div class="row">
+<div class="biz-archive-links">
 
-    <div class="col-md-3">
-      <h2>Services:</h2>
-      {% for service in page.services %}
-      <h3><a href="/services/{{service | slugify }}" class="service"> {{service}} </a></h3>
-      {% endfor %}
-    </div>
+  {% include biz-archive-links.html bg-color="info" fa-icon="fa-map-marked-alt" type="Locations" %}
 
-    <div class="col-md-6">
-      <h2>Green Practices:</h2>
-      {% for practice in page.practices %}
-      <h3><a href="/practices/{{practice | slugify }}" class="practice"> {{practice}} </a></h3>
-      {% endfor %}
-    </div>
+  {% include biz-archive-links.html bg-color="secondary" fa-icon="fa-concierge-bell" type="Services" %}
 
-    <div class="col-md-3">
-      <h2>Locations:</h2>
-      {% for location in page.locations %}
-      <h3><a href="/location/{{location.area | slugify }}" class="location"> {{location.area}} </a></h3>
-      {% endfor %}
-    </div>
+  {% include biz-archive-links.html bg-color="primary" fa-icon="fa-leaf" type="Green Practices" %}
 
-  </div>
 
 </div>
 {% for location in page.locations %}
 <p>
-  {{ location.area }}: 
+  {{ location.area }}:
   {% if location.address_url %}
   <a target="_blank" href="{{ location.address_url }}">
     {% endif %}

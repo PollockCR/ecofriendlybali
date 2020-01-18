@@ -1,0 +1,27 @@
+<div class="py-5 bg-{{ include.bg-color }} text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-sm-3">
+        <div class="text-center align-middle">
+          <i class="fas fa-4x {{ include.fa-icon}}"></i>
+          <h2 class="mb-0">{{ include.type }}</h2>
+        </div>
+      </div>
+      <div class="col-sm-9 my-auto">
+        {% if include.type == 'Services' %}
+        {% for service in page.services %}
+        <h3 class="biz-archive-link"><a href="/services/{{service | slugify }}" class="service btn btn-outline-{{ include.bg-color }}"> {{service}} </a></h3>
+        {% endfor %}
+        {% elsif include.type == 'Green Practices' %}
+        {% for practice in page.practices %}
+        <h3 class="biz-archive-link"><a href="/practices/{{practice | slugify }}" class="practice btn btn-outline-{{ include.bg-color }}"> {{practice}} </a></h3>
+        {% endfor %}
+        {% elsif include.type == 'Locations' %}
+        {% for location in page.locations %}
+        <h3 class="biz-archive-link"><a href="/location/{{location.area | slugify }}" class="location btn btn-outline-{{ include.bg-color }}"> {{location.area}} </a></h3>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
