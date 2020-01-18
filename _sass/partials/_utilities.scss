@@ -10,10 +10,6 @@
   filter: brightness(60%);
 }
 
-.bg-white-transparent {
-  background-color: rgba($white, 0.5);
-}
-
 .zindex-fixed {
   z-index: $zindex-fixed;
 }
@@ -24,6 +20,15 @@
 
 .banner {
   height: calc(100vh - 100px);
+}
+
+.scroll-hint {
+  bottom: 0;
+  margin-bottom: 1rem;
+
+  a {
+    cursor: pointer;
+  }
 }
 
 @include media-breakpoint-up(lg) {

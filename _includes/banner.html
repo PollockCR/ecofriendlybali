@@ -1,7 +1,12 @@
 {% if page.banner.image_path %}
-<section class="banner position-relative text-white text-center
+<section class="banner position-relative text-center
 {% if page.banner.transparent_header %}
 banner-transparent-header
+{% endif %}
+{% if page.banner.text_color %}
+text-{{page.banner.text_color}}
+{% else %}
+text-white
 {% endif %}
 ">
 <div class="bg-img w-100 h-100 position-absolute
@@ -35,6 +40,18 @@ bg-darken
 </div>
 
 </div>
+
+<div class="text-center w-100 position-absolute scroll-hint">
+  <a href="#content-anchor" class="align-bottom
+  {% if page.banner.text_color %}
+  text-{{page.banner.text_color}}
+  {% else %}
+  text-white
+  {% endif %}
+  "><i class="fas fa-chevron-down fa-3x"></i></a>
+</div>
+
+<div id="content-anchor"></div>
 
 </section>
 {% else %}

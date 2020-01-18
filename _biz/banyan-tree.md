@@ -48,6 +48,8 @@ banner:
   transparent_header: false
   darken: true
   text_shadow: true
+  text_color: 'white'
+  full_height: false
 
 ---
 The Banyan Tree is a five-star luxury hotel in Unagasan, Bali. Their earth-friendly practices have earned them several certifications and awards. The [Banyan Tree Global Foundation](http://www.banyantreeglobalfoundation.com) focuses on works to improve their community and environment through sustainable development. According to the hotel's [Sustainability page](https://www.banyantree.com/en/indonesia/ungasan-bali/sustainability):
