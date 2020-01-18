@@ -15,37 +15,42 @@ layout: default
 
 
 </div>
-{% for location in page.locations %}
-<p>
-  {{ location.area }}:
-  {% if location.address_url %}
-  <a target="_blank" href="{{ location.address_url }}">
-    {% endif %}
-    {% if location.address %}
-    {{ location.address }}
-    {% endif %}
+
+<div class="container my-5">
+
+  {% for location in page.locations %}
+  <p>
+    {{ location.area }}:
     {% if location.address_url %}
-  </a>
-  {% endif %}
-</p>
-
-{% endfor %}
-
-{% include page-intro.html %}
-
-{{ content }}
-
-<nav aria-label="Adjacent Posts">
-  <ul>
-    {% if page.previous.url %}
-    <li>
-      <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
-    </li>
+    <a target="_blank" href="{{ location.address_url }}">
+      {% endif %}
+      {% if location.address %}
+      {{ location.address }}
+      {% endif %}
+      {% if location.address_url %}
+    </a>
     {% endif %}
-    {% if page.next.url %}
-    <li>
-      <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
-    </li>
-    {% endif %}
-  </ul>
-</nav>
+  </p>
+
+  {% endfor %}
+
+  {% include page-intro.html %}
+
+  {{ content }}
+
+  <nav aria-label="Adjacent Posts">
+    <ul>
+      {% if page.previous.url %}
+      <li>
+        <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
+      </li>
+      {% endif %}
+      {% if page.next.url %}
+      <li>
+        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+
+</div>
