@@ -21,6 +21,9 @@ practices:
   - community initiatives
   - recycling
   - resource conservation
+  - cleanups
+  - water conservation/filteration
+  - energy conservation
 locations:
   - address: >-
       Dusun Manuksesa, Desa Bebetin, Bebetin, Singaraja, Buleleng Regency, Bali
