@@ -9,5 +9,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
       links[i].className += " local-link";
     }
   }
-  console.log(links.length);
 });
