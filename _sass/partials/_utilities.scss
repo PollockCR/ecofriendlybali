@@ -31,6 +31,10 @@
   }
 }
 
+.map iframe {
+  width: 100%;
+}
+
 @include media-breakpoint-up(lg) {
   .navbar-banner {
     position: absolute;

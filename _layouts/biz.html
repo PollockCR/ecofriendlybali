@@ -16,28 +16,117 @@ layout: default
 
 </div>
 
-<div class="container my-5">
-
-  {% for location in page.locations %}
-  <p>
-    {{ location.area }}:
-    {% if location.address_url %}
-    <a target="_blank" href="{{ location.address_url }}">
-      {% endif %}
-      {% if location.address %}
-      {{ location.address }}
-      {% endif %}
-      {% if location.address_url %}
-    </a>
-    {% endif %}
-  </p>
-
-  {% endfor %}
+<div class="container py-5">
 
   {% include page-intro.html %}
 
   {{ content }}
 
+</div>
+
+<div class="container pb-5 locations">
+  <ul class="nav nav-tabs mb-4" id="locationTabs" role"tablist">
+    {% for location in page.locations %}
+    <li class="nav-item">
+      <a target="_blank" href="#{{location.area | slugify}}" id="{{location.area | slugify}}-tab" class="nav-link
+      {% if forloop.index == 1 %}
+      active
+      {%- endif -%}
+      " data-toggle="tab" role="tab" aria-controls="{{location.area | slugify}}" aria-selected="
+      {%- if forloop.index == 1 -%}
+      true
+      {%- else -%}
+      false
+      {%- endif -%}
+      ">
+      {{ location.area }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<div class="tab-content" id="locationTabContent">
+  {% for location in page.locations %}
+  <div class="tab-pane fade
+  {% if forloop.index == 1 %}
+  show active
+  {% endif %}
+  " role="tabpanel" id="{{location.area | slugify}}" aria-labeled-by="{{location.area | slugify}}-tab">
+  <div class="row">
+    <div class="col-xl-6">
+      {% if location.address_url or location.address %}
+      <p class="mb-4">
+        <i class="fas fa-map-marker-alt fa-2x align-middle mr-3 text-primary"></i>
+        {% if location.address_url %}
+        <a target="_blank" href="{{ location.address_url }}">
+          {% endif %}
+          {% if location.address %}
+          {{ location.address }}
+          {% endif %}
+          {% if location.address_url %}
+        </a>
+        {% endif %}
+      </p>
+      {% endif %}
+
+      {% if location.phones %}
+      <p class="mb-3">
+        <i class="fas fa-phone-alt fa-2x align-middle mb-2 mr-2 text-primary"></i>
+        {% for phone in location.phones %}
+        <a class="btn btn-outline-primary mb-2 mr-2" href="tel:{{phone | remove: ' '}}">{{phone}}</a>
+        {% endfor %}
+      </p>
+      {% endif %}
+
+      {% if location.website or page.contact.website_url %}
+      <p>
+        <i class="fas fa-globe-asia fa-2x align-middle mb-2 mr-2 text-primary"></i>
+        <a href="
+        {% if location.url %}
+        {{location.url}}
+        {% else %}
+        {{page.contact.website_url}}
+        {% endif %}
+        ">
+        {% if location.url %}
+        {{location.website | remove: "https://" | remove: "http://" | remove: "www." }}
+        {% else %}
+        {{page.contact.website_url | remove: "https://" | remove: "http://" | remove: "www." }}
+        {% endif %}
+      </a>
+    </p>
+    {% endif %}
+
+    {% if page.contact.social_media %}
+    <p class="mb-4">
+      {% for social in page.contact.social_media %}
+
+      <a href="{{social.url}}" title="{{social.name}}">
+      <i class="fa-2x align-middle mb-3 mr-3 text-primary
+      {% if social.name == 'Youku' %}
+      far fa-play-circle
+      {% else %}
+      fab fa-{{social.name | downcase}}
+      {% endif %}
+      "></i>
+    </a>
+
+    {% endfor %}
+  </p>
+  {% endif %}
+
+</div>
+<div class="col-xl-6 map">
+  {{ location.map }}
+</div>
+</div>
+
+</div>
+{% endfor %}
+</div>
+</div>
+
+
+<div class="container">
   <nav aria-label="Adjacent Posts">
     <ul>
       {% if page.previous.url %}
@@ -52,5 +141,4 @@ layout: default
       {% endif %}
     </ul>
   </nav>
-
 </div>
