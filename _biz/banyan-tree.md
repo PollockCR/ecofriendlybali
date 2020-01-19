@@ -30,12 +30,6 @@ locations:
       - '+62 361704477'
       - '+62 81139602828'
     map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.363807988442!2d115.15708231545243!3d-8.845679993648126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25b11fffcae07%3A0x7e5477c107cdd31d!2sBanyan%20Tree%20Ungasan%20Bali!5e0!3m2!1sen!2ses!4v1579351977371!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  - area: Testing
-    address: Testing Testing Banjar Kelod, Ungasan, Bali - Indonesia 80364
-    phones:
-      - '+62 361 300 7000'
-    address_url: https://goo.gl/maps/TMd85dQouMJ3Efno9
-    map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.363807988442!2d115.15708231545243!3d-8.845679993648126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25b11fffcae07%3A0x7e5477c107cdd31d!2sBanyan%20Tree%20Ungasan%20Bali!5e0!3m2!1sen!2ses!4v1579351977371!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 contact:
   website_url: https://www.banyantree.com/en/indonesia/ungasan-bali
   social_media:
