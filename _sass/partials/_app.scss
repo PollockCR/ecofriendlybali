@@ -7,12 +7,36 @@
 
 .biz-archive-link {
   display: inline-block;
-  a.service, a.location, a.practice {
+}
+
+.btn-archive-outline {
+  &.btn-outline-primary {
     background-color: $white;
-    border-color: $white;
+    color: $primary;
     @include hover {
       border-color: $white;
       color: $white;
+      background-color: $primary;
+    }
+  }
+
+  &.btn-outline-secondary {
+    background-color: $white;
+    color: $secondary;
+    @include hover {
+      border-color: $white;
+      color: $white;
+      background-color: $secondary;
+    }
+  }
+
+  &.btn-outline-info {
+    background-color: $white;
+    color: $info;
+    @include hover {
+      border-color: $white;
+      color: $white;
+      background-color: $info;
     }
   }
 }
