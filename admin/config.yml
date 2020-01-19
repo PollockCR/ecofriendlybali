@@ -31,7 +31,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Services"
         name: "services"
         widget: "select"
-        options: ["accommodation", "budget accommodation", "catering", "cooking class", "eco-products shop", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "midrange accommodation", "restaurant", "shop", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
+        options: ["accommodation", "budget accommodation", "catering", "cooking class", "eco-products shop", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "meditation", "midrange accommodation", "restaurant", "retreats", "shop", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
         multiple: true
       - label: "Green Practices"
         name: "practices"
@@ -105,12 +105,15 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Transparent Header"
             name: transparent_header
             widget: boolean
+            required: false
           - label: "Darken Image"
             name: darken
             widget: boolean
+            required: false
           - label: Text Shadow
             name: text_shadow
             widget: boolean
+            required: false
           - label: Text Color
             name: text_color
             widget: select
@@ -124,6 +127,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Full Height
             name: full_height
             widget: boolean
+            required: false
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
