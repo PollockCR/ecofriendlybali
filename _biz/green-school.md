@@ -3,7 +3,14 @@ layout: biz
 title: Green School
 author: catherine_pollock
 date: '2020-01-19 15:13:56'
-intro_paragraph: A community of learners making *our* world sustainable
+intro_paragraph: >-
+  Mission: A community of learners making *our* world sustainable
+
+
+  Green School Way: We educate *for* sustainability, through
+  community-integrated, entrepreneurial learning, in a wall-less, natural
+  environment. Our holistic, student-guided approach inspires and empowers us to
+  be changemakers.
 services:
   - education
 practices:
@@ -50,4 +57,4 @@ banner:
   text_color: white
   text_shadow: true
 ---
-The Green School is "a campus that ignites the senses and natural curiosity of children", by encouraging innovation, creativity, etc.
+The Green School is a school without walls that believes in encouraging students to explore their curiosity, innovative, and creative abilities. The school is takes pride in its sense of community and ability to facilitate growth as a whole person. In addition to traditional academic subjects, students also learn "Green School Skills" and "Green School Values". These values include integrity, responsibility, empath, sustainability, peace, equity, community, and trust.
