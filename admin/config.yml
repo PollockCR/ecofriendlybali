@@ -31,12 +31,12 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Services"
         name: "services"
         widget: "select"
-        options: ["accommodation", "budget accommodation", "catering", "cooking class", "eco-products shop", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "meditation", "midrange accommodation", "restaurant", "retreats", "shop", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
+        options: ["accommodation", "budget accommodation", "catering", "consulting", "cooking class", "eco-store", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "meditation", "midrange accommodation", "partnerships", "restaurant", "retreats", "eco store", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
         multiple: true
       - label: "Green Practices"
         name: "practices"
         widget: "select"
-        options: ["animal conservation", "aquaponics", "bio/electric transportation", "cleanups", "community initiatives", "composting", "EarthCheck Certification", "eco-products shop", "energy conservation", "garden", "National Green Hotel Award", "plastic-free", "solar planels", "recycling", "resource conservation", "tree-planting", "Tri Hita Karana Award", "turtle conservation", "water conservation/filteration"]
+        options: ["animal conservation", "aquaponics", "bio/electric transportation", "cleanups", "community initiatives", "composting", "EarthCheck Certification", "energy conservation", "garden", "National Green Hotel Award", "plastic-free", "solar planels", "recycling", "resource conservation", "tree-planting", "Tri Hita Karana Award", "turtle conservation", "water conservation/filteration"]
         multiple: true
       - label: "Locations"
         name: "locations"
