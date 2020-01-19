@@ -105,15 +105,12 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Transparent Header"
             name: transparent_header
             widget: boolean
-            required: false
           - label: "Darken Image"
             name: darken
             widget: boolean
-            required: false
           - label: Text Shadow
             name: text_shadow
             widget: boolean
-            required: false
           - label: Text Color
             name: text_color
             widget: select
@@ -127,7 +124,6 @@ collections: # A list of collections the CMS should be able to edit
           - label: Full Height
             name: full_height
             widget: boolean
-            required: false
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
