@@ -22,6 +22,16 @@ a.service, a.location, a.practice {
   }
 }
 
+// font awesome icons
+a i {
+  transition: transform 0.25s;
+}
+
+a:hover i {
+  transform: scale(1.1);
+}
+
+
 
 
 

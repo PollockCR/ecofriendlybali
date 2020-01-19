@@ -37,7 +37,7 @@ contact:
       url: https://www.facebook.com/BanyanTreeHotels
     - name: Instagram
       url: http://instagram.com/banyantreehotels
-    - name: Tripadvisor
+    - name: TripAdvisor
       url: https://www.tripadvisor.com/Hotel_Review-g1219108-d887047-Reviews-Banyan_Tree_Ungasan_Bali-Ungasan_Nusa_Dua_Peninsula_Bali.html?m=19905
     - name: Pinterest
       url: http://www.pinterest.com/banyantreelife/
