@@ -5,14 +5,16 @@ layout: default
 {% include banner.html %}
 <!-- Photo by Frans Daniels on Unsplash https://unsplash.com/photos/xBgoj_jPoMU -->
 
-<div class="container">
+<div class="container py-5">
 
-  <h2>{{ page.title }}</h2>
+  <img class="d-inline-block mb-3" src="{{page.intro_icon_image_path}}">
 
-    {% include page-intro.html %}
+  <h2 class="mb-3">{{ page.title }}</h2>
 
-    {{ content }}
+  {% include page-intro.html %}
 
-    {% include blog-featured.html %}
-    
+  {{ content }}
+
+  <!-- {% include blog-featured.html %} -->
+
 </div>
