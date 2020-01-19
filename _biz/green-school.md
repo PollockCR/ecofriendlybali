@@ -23,8 +23,10 @@ contact:
       url: 'https://www.instagram.com/greenschoolbali/'
     - name: Twitter
       url: 'https://twitter.com/greenschoolbali'
-    - name: YoutTube
+    - name: YouTube
       url: 'https://twitter.com/greenschoolbali'
+    - name: LinkedIn
+      url: 'https://www.linkedin.com/company/green-school'
   website_url: 'https://www.greenschool.org/about/'
 more_info: 'https://www.greenschool.org/environment/'
 image_path: /assets/img/uploads/green-school.jpg
