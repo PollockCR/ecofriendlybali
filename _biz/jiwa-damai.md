@@ -15,6 +15,8 @@ services:
   - restaurant
   - yoga
   - tours
+  - meditation
+  - retreats
 practices:
   - garden
   - community initiatives
