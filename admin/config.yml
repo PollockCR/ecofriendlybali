@@ -31,12 +31,12 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Services"
         name: "services"
         widget: "select"
-        options: ["accomodation", "budget accommodation", "midrange accommodation", "luxury accommodation", "hostel", "hotel", "guesthouse", "villa", "restaurant", "shop", "yoga", "spa", "cooking class", "waste management", "education"]
+        options: ["accomodation", "budget accommodation", "cooking class", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "midrange accommodation", "restaurant", "shop", "spa", "tours", "villa", "waste management", "yoga"]
         multiple: true
       - label: "Green Practices"
         name: "practices"
         widget: "select"
-        options: ["animal conservation", "aquaponics", "bio/electric transportation", "cleanups", "composting", "EarthCheck Certification", "garden", "community initiatives", "National Green Hotel Award", "plastic-free", "solar planels", "recycling", "resource conservation", "tree-planting", "Tri Hita Karana Award", "turtle conservation"]
+        options: ["animal conservation", "aquaponics", "bio/electric transportation", "cleanups", "community initiatives", "composting", "EarthCheck Certification", "energy conservation", "garden", "National Green Hotel Award", "plastic-free", "solar planels", "recycling", "resource conservation", "tree-planting", "Tri Hita Karana Award", "turtle conservation", "water conservation/filteration"]
         multiple: true
       - label: "Locations"
         name: "locations"
@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Area
             name: area
             widget: select
-            options: ["Amed", "Canggu", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan"]
+            options: ["Canggu", "East Coast", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "North Coast", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan", "West Coast"]
             multiple: false
           - label: Address
             name: address
