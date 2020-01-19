@@ -10,6 +10,125 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 publish_mode: editorial_workflow # Enable drafts
 
 collections: # A list of collections the CMS should be able to edit
+  # BIZ
+  - name: "biz" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Businesses" # Used in the UI, ie.: "New Post"
+    folder: "_biz" # The path to the folder where the documents are stored
+    sort: "title:asc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "biz"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - label: "Author"
+        name: "author"
+        widget: "select"
+        options:
+          - { label: "Catherine Pollock", value: "catherine_pollock" }
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - label: "Services"
+        name: "services"
+        widget: "select"
+        options: ["accomodation", "budget accommodation", "midrange accommodation", "luxury accommodation", "hostel", "hotel", "guesthouse", "villa", "restaurant", "shop", "yoga", "spa", "cooking class", "waste management", "education"]
+        multiple: true
+      - label: "Green Practices"
+        name: "practices"
+        widget: "select"
+        options: ["animal conservation", "aquaponics", "bio/electric transportation", "cleanups", "composting", "EarthCheck Certification", "garden", "community initiatives", "National Green Hotel Award", "plastic-free", "solar planels", "recycling", "resource conservation", "tree-planting", "Tri Hita Karana Award", "turtle conservation"]
+        multiple: true
+      - label: "Locations"
+        name: "locations"
+        widget: "list"
+        allow_add: false
+        fields:
+          - label: Area
+            name: area
+            widget: select
+            options: ["Amed", "Canggu", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan"]
+            multiple: false
+          - label: Address
+            name: address
+            widget: string
+            required: false
+          - label: "Address URL"
+            name: address_url
+            widget: string
+            required: false
+          - label: Phones
+            name: phones
+            widget: list
+            allow_add: false
+            required: false
+          - label: Map Embed Code
+            name: map
+            required: false
+      - label: Contact
+        name: contact
+        widget: object
+        fields:
+          - label: "Website URL"
+            name: website_url
+            widget: string
+            required: false
+          - label: "Social Media"
+            name: social_media
+            widget: list
+            required: false
+            fields:
+              - label: Name
+                name: name
+                widget: select
+                options: ["Facebook", "Instagram", "TripAdvisor", "Pinterest", "Twitter", "YoutTube", "Weibo", "Youku"]
+              - label: URL
+                name: url
+                widget: string
+      - label: "More Info URL"
+        name: more_info
+        required: false
+      - label: "Featured Image"
+        name: image_path
+        widget: image
+        required: false
+      - label: Banner
+        name: banner
+        widget: object
+        fields:
+          - label: Image
+            name: image_path
+            widget: image
+            required: false
+          - label: Text
+            name: text
+            widget: string
+            required: false
+          - label: "Transparent Header"
+            name: transparent_header
+            widget: boolean
+            required: false
+          - label: "Darken Image"
+            name: darken
+            widget: boolean
+            required: false
+          - label: Text Shadow
+            name: text_shadow
+            widget: boolean
+            required: false
+          - label: Text Color
+            name: text_color
+            widget: select
+            required: false
+            options:
+              - { label: "Black", value: "black" }
+              - { label: "White", value: "white" }
+              - { label: "Green", value: "primary" }
+              - { label: "Dark Green", value: "dark" }
+              - { label: "Mauve", value: "secondary" }
+          - label: Full Height
+            name: full_height
+            widget: boolean
+            required: false
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
