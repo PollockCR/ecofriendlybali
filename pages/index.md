@@ -11,4 +11,5 @@ banner:
   transparent_header: true
   darken: false
   text_shadow: true
+  full_height: true
 ---

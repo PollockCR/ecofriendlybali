@@ -8,6 +8,9 @@ text-{{page.banner.text_color}}
 {% else %}
 text-white
 {% endif %}
+{% if page.banner.full_height == false %}
+banner-short
+{% endif %}
 ">
 <div class="bg-img w-100 h-100 position-absolute
 {% if page.banner.darken %}
@@ -41,6 +44,7 @@ bg-darken
 
 </div>
 
+{% if page.banner.full_height != false %}
 <div class="text-center w-100 position-absolute scroll-hint">
   <a href="#content-anchor" class="align-bottom
   {% if page.banner.text_color %}
@@ -52,6 +56,8 @@ bg-darken
 </div>
 
 <div id="content-anchor"></div>
+{% endif %}
+
 
 </section>
 {% else %}

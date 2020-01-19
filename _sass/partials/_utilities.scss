@@ -22,6 +22,10 @@
   height: calc(100vh - 100px);
 }
 
+.banner-short {
+  height: calc(70vh - 100px);
+}
+
 .scroll-hint {
   bottom: 0;
   margin-bottom: 1rem;
@@ -43,5 +47,9 @@
 
   .banner-transparent-header {
     height: 100vh;
+  }
+
+  .banner-transparent-header.banner-short {
+    height: 70vh;
   }
 }
