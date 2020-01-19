@@ -31,7 +31,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Services"
         name: "services"
         widget: "select"
-        options: ["accomodation", "budget accommodation", "cooking class", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "midrange accommodation", "restaurant", "shop", "spa", "tours", "villa", "waste management", "yoga"]
+        options: ["accomodation", "budget accommodation", "cooking class", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "midrange accommodation", "restaurant", "shop", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
         multiple: true
       - label: "Green Practices"
         name: "practices"
@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Area
             name: area
             widget: select
-            options: ["Canggu", "East Coast", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "North Coast", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan", "West Coast"]
+            options: ["Canggu", "Denpasar", "Eastern Bali", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "Northern Bali", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan", "Western Bali"]
             multiple: false
           - label: Address
             name: address
