@@ -1,6 +1,6 @@
 {% if page.banner.image_path %}
 <section class="banner position-relative text-center
-{% if page.banner.transparent_header %}
+{% if page.banner.transparent_header == true %}
 banner-transparent-header
 {% endif %}
 {% if page.banner.text_color %}
@@ -8,7 +8,7 @@ text-{{page.banner.text_color}}
 {% else %}
 text-white
 {% endif %}
-{% if page.banner.full_height == false %}
+{% if page.banner.full_height == false or page.banner.full_height = null %}
 banner-short
 {% endif %}
 ">
