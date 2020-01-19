@@ -9,12 +9,12 @@ intro_paragraph: >-
   surrounded by beautiful countryside, tucked away in an idyllic valley of
   terraced rice fields.
 services:
-  - accomodation
   - midrange accommodation
   - villa
   - restaurant
   - spa
   - swimming pool
+  - accommodation
 practices:
   - composting
   - garden
