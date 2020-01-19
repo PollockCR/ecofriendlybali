@@ -31,7 +31,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Services"
         name: "services"
         widget: "select"
-        options: ["accomodation", "budget accommodation", "catering", "cooking class", "eco-products shop", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "midrange accommodation", "restaurant", "shop", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
+        options: ["accommodation", "budget accommodation", "catering", "cooking class", "eco-products shop", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "midrange accommodation", "restaurant", "shop", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
         multiple: true
       - label: "Green Practices"
         name: "practices"
