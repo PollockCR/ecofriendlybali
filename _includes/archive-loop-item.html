@@ -1,12 +1,23 @@
-<div class="col-md-4">
-    <a href="{{biz.url}}">
-      <div class="bg-img mb-2" style="background-image:url('{{biz.image_path}}')"> </div>
+<div class="card bg-white rounded">
+  <a href="{{biz.url}}" aria-hidden="true">
+    <div class="bg-img card-img-top" aria-hidden="true" style="background-image:url('{{biz.image_path}}')"> </div>
+  </a>
+  <div class="px-3 pb-3 pt-2">
+    <a href="{{biz.url}}" aria-hidden="true">
       <h3> {{biz.title}} </h3>
-      <p class="mb-0">
-      {% for services in biz.services %}
-        <a href="/services/{{services | slugify}}" class="service btn btn-sm btn-primary mr-2 mb-2"> {{services}} </a>
-      {% endfor %}
-      </p>
-      <p> {{biz.excerpt | strip_html | truncate:100 }} </p>
     </a>
+    <p class="mb-0">
+      {% for location in biz.locations | limit: 6 %}
+      <a href="/locations/{{location.area | slugify}}" class="location btn btn-sm btn-info mr-2 mb-2"> {{location.area}} </a>
+      {% endfor %}
+      {% for service in biz.services | limit: 6 %}
+      <a href="/services/{{service | slugify}}" class="service btn btn-sm btn-secondary mr-2 mb-2"> {{service}} </a>
+      {% endfor %}
+      {% for practice in biz.practices | limit: 6 %}
+      <a href="/practices/{{practice | slugify}}" class="practice btn btn-sm btn-primary mr-2 mb-2"> {{practice}} </a>
+      {% endfor %}
+      <a href="{{biz.url}}" aria-hidden="true">+ More</a>
+    </p>
+    <p class="mb-0"> {{biz.excerpt | strip_html | truncate:100 }} <a href="{{biz.url}}">Read More</a></p>
   </div>
+</div>
