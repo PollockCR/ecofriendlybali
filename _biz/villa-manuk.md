@@ -14,6 +14,7 @@ services:
   - villa
   - restaurant
   - spa
+  - swimming pool
 practices:
   - composting
   - garden
@@ -25,7 +26,7 @@ locations:
       Dusun Manuksesa, Desa Bebetin, Bebetin, Singaraja, Buleleng Regency, Bali
       81171, Indonesia
     address_url: 'https://goo.gl/maps/NCGZmNUsV2mYVnmF8'
-    area: Tanjung Benoa
+    area: Northern Bali
     map: >-
       <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.4369212066354!2d115.198365315449!3d-8.15865799412751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19205610ebeab%3A0xecab2d745944f334!2sVilla%20Manuk!5e0!3m2!1sen!2ses!4v1579448618556!5m2!1sen!2ses"
