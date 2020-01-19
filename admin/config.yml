@@ -41,7 +41,6 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Locations"
         name: "locations"
         widget: "list"
-        allow_add: false
         fields:
           - label: Area
             name: area
@@ -80,7 +79,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Name
                 name: name
                 widget: select
-                options: ["Facebook", "Instagram", "TripAdvisor", "Pinterest", "Twitter", "YoutTube", "Weibo", "Youku"]
+                options: ["Facebook", "Instagram", "TripAdvisor", "LinkedIn", "Pinterest", "Twitter", "YouTube", "Weibo", "Youku"]
               - label: URL
                 name: url
                 widget: string
