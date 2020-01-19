@@ -14,8 +14,8 @@ practices:
   - plastic-free
   - resource conservation
   - tree-planting
-  - on-site organic garden
-  - community support
+  - garden
+  - community initiatives
   - cleanups
   - turtle conservation
   - animal conservation
