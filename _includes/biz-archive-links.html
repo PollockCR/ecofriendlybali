@@ -10,15 +10,15 @@
       <div class="col-sm-9 my-auto">
         {% if include.type == 'Services' %}
         {% for service in page.services %}
-        <h3 class="biz-archive-link"><a href="/services/{{service | slugify }}" class="service btn btn-outline-{{ include.bg-color }}"> {{service}} </a></h3>
+        <h3 class="biz-archive-link"><a href="/services/{{service | slugify }}" class="service btn btn-outline-{{ include.bg-color }} mr-3"> {{service}} </a></h3>
         {% endfor %}
         {% elsif include.type == 'Green Practices' %}
         {% for practice in page.practices %}
-        <h3 class="biz-archive-link"><a href="/practices/{{practice | slugify }}" class="practice btn btn-outline-{{ include.bg-color }}"> {{practice}} </a></h3>
+        <h3 class="biz-archive-link"><a href="/practices/{{practice | slugify }}" class="practice btn btn-outline-{{ include.bg-color }} mr-3"> {{practice}} </a></h3>
         {% endfor %}
         {% elsif include.type == 'Locations' %}
         {% for location in page.locations %}
-        <h3 class="biz-archive-link"><a href="/location/{{location.area | slugify }}" class="location btn btn-outline-{{ include.bg-color }}"> {{location.area}} </a></h3>
+        <h3 class="biz-archive-link"><a href="/location/{{location.area | slugify }}" class="location btn btn-outline-{{ include.bg-color }} mr-3"> {{location.area}} </a></h3>
         {% endfor %}
         {% endif %}
       </div>
