@@ -14,6 +14,6 @@ banner:
   text_shadow: true
   full_height: true
 ---
-If you would like to get in touch, please reach out on [catherinepollock.com](https://catherinepollock.com/#contact).
+If you would like to get in touch, please reach out on our [Contact page](/contact).
 
-If you know of a green, environmentally-friendly business in Bali, [share it with us](https://catherinepollock.com/#contact)!
+If you know of a green, environmentally-friendly business in Bali, [share it with us](/contact)!
