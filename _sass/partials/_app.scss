@@ -54,7 +54,10 @@ a:hover i {
   transform: scale(1.1);
 }
 
-
+// forms
+input, textarea {
+  min-width: 20rem;
+}
 
 /*
 // the body element is our primary layout grid

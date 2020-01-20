@@ -2,10 +2,13 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<div class="container py-5">
+  <h2>{{ page.title }}</h2>
 
-{% include page-intro.html %}
+  {% include page-intro.html %}
 
-{{ content }}
+  {{ content }}
 
-{% include contact-form.html %}
+  {% include contact-form.html %}
+
+</div>
