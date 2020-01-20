@@ -7,7 +7,7 @@ layout: default
 
 <div class="biz-archive-links">
 
-  {% include biz-archive-links.html bg-color="info" fa-icon="fa-map-marked-alt" type="Locations" %}
+  {% include biz-archive-links.html bg-color="info" fa-icon="fa-map-marked-alt" type="Areas" %}
 
   {% include biz-archive-links.html bg-color="secondary" fa-icon="fa-concierge-bell" type="Services" %}
 
@@ -30,18 +30,18 @@ layout: default
   <ul class="nav nav-tabs mb-4" id="locationTabs" role"tablist">
     {% for location in page.locations %}
     <li class="nav-item">
-      <a target="_blank" href="#{{location.area | slugify}}" id="{{location.area | slugify}}-tab" class="nav-link
+      <a target="_blank" href="#{{location.areas.first | slugify}}" id="{{location.areas.first | slugify}}-tab" class="nav-link
       {% if forloop.index == 1 %}
       active
       {%- endif -%}
-      " data-toggle="tab" role="tab" aria-controls="{{location.area | slugify}}" aria-selected="
+      " data-toggle="tab" role="tab" aria-controls="{{location.areas.first | slugify}}" aria-selected="
       {%- if forloop.index == 1 -%}
       true
       {%- else -%}
       false
       {%- endif -%}
       ">
-      {{ location.area }}
+      {{ location.areas.first }}
     </a>
   </li>
   {% endfor %}
@@ -52,7 +52,7 @@ layout: default
   {% if forloop.index == 1 %}
   show active
   {% endif %}
-  " role="tabpanel" id="{{location.area | slugify}}" aria-labeled-by="{{location.area | slugify}}-tab">
+  " role="tabpanel" id="{{location.areas.first | slugify}}" aria-labeled-by="{{location.areas.first | slugify}}-tab">
   <div class="row">
     <div class="col-xl-6">
       {% if location.address_url or location.address %}

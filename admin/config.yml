@@ -42,11 +42,11 @@ collections: # A list of collections the CMS should be able to edit
         name: "locations"
         widget: "list"
         fields:
-          - label: Area
-            name: area
+          - label: Areas for This Location (first selection is used in tabs)
+            name: areas
             widget: select
-            options: ["Canggu", "Denpasar", "Eastern Bali", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "Northern Bali", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan", "Western Bali"]
-            multiple: false
+            options: ["Canggu", "Denpasar", "Eastern Bali", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "Northern Bali", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Singaraja", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan", "Western Bali"]
+            multiple: true
           - label: Address
             name: address
             widget: string

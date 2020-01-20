@@ -16,9 +16,11 @@
         {% for practice in page.practices %}
         <h3 class="biz-archive-link"><a href="/practices/{{practice | slugify }}" class="practice btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{practice}} </a></h3>
         {% endfor %}
-        {% elsif include.type == 'Locations' %}
+        {% elsif include.type == 'Areas' %}
         {% for location in page.locations %}
-        <h3 class="biz-archive-link"><a href="/location/{{location.area | slugify }}" class="location btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{location.area}} </a></h3>
+        {% for area in location.areas %}
+        <h3 class="biz-archive-link"><a href="/location/{{area | slugify }}" class="location btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{area}} </a></h3>
+        {% endfor %}
         {% endfor %}
         {% endif %}
       </div>

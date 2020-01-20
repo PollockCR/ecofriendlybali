@@ -31,7 +31,8 @@ locations:
       Jalan Melati 3, Banjar Bindu, Mambal, Ubud, Mekar Bhuwana, Kec.
       Abiansemal, Kabupaten Badung, Bali 80352, Indonesia
     address_url: 'https://goo.gl/maps/5yo2xz3DiuuG5Uqf7'
-    area: Ubud
+    areas:
+      - Ubud
     map: >-
       <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.4934011445785!2d115.22994031545085!3d-8.548460993855109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23c5441379f9f%3A0xf45a67d5063487c3!2sJiwa%20Damai%20Organic%20Garden%20%26%20Retreat%20Center!5e0!3m2!1sen!2ses!4v1579450494379!5m2!1sen!2ses"

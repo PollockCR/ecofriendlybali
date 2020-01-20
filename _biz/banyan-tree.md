@@ -23,7 +23,8 @@ practices:
   - National Green Hotel Award
   - Tri Hita Karana Award
 locations:
-  - area: Ungasan
+  - areas:
+      - Ungasan
     address: Jl. Melasti Banjar Kelod, Ungasan, Bali - Indonesia 80364
     address_url: https://goo.gl/maps/TMd85dQouMJ3Efno9
     phones:
