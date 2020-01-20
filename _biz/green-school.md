@@ -3,6 +3,7 @@ layout: biz
 title: Green School
 author: catherine_pollock
 date: '2020-01-19 15:13:56'
+description: The Green School is an environmentally-friendly private school near Ubud on the island of Bali.
 intro_paragraph: >-
   Mission: A community of learners making *our* world sustainable
 
