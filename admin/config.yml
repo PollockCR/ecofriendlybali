@@ -137,10 +137,21 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "Green", value: "primary" }
               - { label: "Dark Green", value: "dark" }
               - { label: "Mauve", value: "secondary" }
+              - { label: "Gray", value: "info" }
           - label: Full Height
             name: full_height
             widget: boolean
             required: false
+          - label: Background Color
+            name: background_color
+            widget: select
+            options:
+              - { label: "Black", value: "black" }
+              - { label: "White", value: "white" }
+              - { label: "Green", value: "primary" }
+              - { label: "Dark Green", value: "dark" }
+              - { label: "Mauve", value: "secondary" }
+              - { label: "Gray", value: "info" }
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"

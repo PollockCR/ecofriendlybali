@@ -1,0 +1,20 @@
+{% if page.intro_paragraph and page.intro_paragraph != '' %}
+<section class="text-center bg-primary pb-5 text-light
+{% if page.banner.image_path == null or page.banner.image_path == '' %}
+mt-n4
+{% endif %}
+{% if page.banner.background_color %}
+bg-{{page.banner.background_color}}
+{% else %}
+bg-primary
+{% endif %}
+">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        {% include page-intro.html %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
