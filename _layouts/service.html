@@ -6,6 +6,16 @@ layout: default
 
 {% include intro-banner.html %}
 
+{% assign content_words = page.content | number_of_words %}
+
+{% if content_words > 0 %}
+<section class="py-5">
+  <div class="container">
+    {{content}}
+  </div>
+</section>
+{% endif %}
+
 <section class="bg-light py-5">
   <div class="container">
 
