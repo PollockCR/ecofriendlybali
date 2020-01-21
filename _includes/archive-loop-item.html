@@ -8,7 +8,9 @@
     </a>
     <p class="mb-0">
       {% for location in biz.locations | limit: 6 %}
-      <a href="/locations/{{location.area | slugify}}" class="location btn btn-sm btn-info mr-2 mb-2"> {{location.area}} </a>
+      {% for area in location.areas %}
+      <a href="/locations/{{area | slugify}}" class="location btn btn-sm btn-info mr-2 mb-2"> {{area}} </a>
+      {% endfor %}
       {% endfor %}
       {% for service in biz.services | limit: 6 %}
       <a href="/services/{{service | slugify}}" class="service btn btn-sm btn-secondary mr-2 mb-2"> {{service}} </a>
