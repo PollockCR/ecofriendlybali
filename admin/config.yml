@@ -34,11 +34,19 @@ collections: # A list of collections the CMS should be able to edit
         widget: "select"
         options: ["accommodation", "budget accommodation", "catering", "consulting", "cooking class", "eco-store", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "meditation", "midrange accommodation", "partnerships", "restaurant", "retreats", "eco store", "spa", "swimming pool", "tours", "villa", "waste management", "yoga"]
         multiple: true
+      - label: "Additional Services"
+        name: "additional-services"
+        widget: list
+        required: false
       - label: "Green Practices"
         name: "practices"
         widget: "select"
         options: ["animal conservation", "aquaponics", "bio/electric transportation", "cleanups", "community initiatives", "composting", "EarthCheck Certification", "energy conservation", "garden", "National Green Hotel Award", "plastic-free", "solar planels", "recycling", "resource conservation", "tree-planting", "Tri Hita Karana Award", "turtle conservation", "water conservation/filteration"]
         multiple: true
+      - label: "Additional Green Practices"
+        name: "additional-practices"
+        widget: list
+        required: false
       - label: "Locations"
         name: "locations"
         widget: "list"
@@ -48,6 +56,10 @@ collections: # A list of collections the CMS should be able to edit
             widget: select
             options: ["Canggu", "Denpasar", "Eastern Bali", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "Northern Bali", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Singaraja", "Seminyak", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan", "Western Bali"]
             multiple: true
+          - label: "Additional Areas"
+            name: "additional-areas"
+            widget: list
+            required: false
           - label: Address
             name: address
             widget: string
