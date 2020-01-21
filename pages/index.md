@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Coming Soon
+title: Eco-Friendly Bali is Coming Soon
 permalink: /
 section: home
 intro_icon_image_path: https://img.icons8.com/wired/64/000000/hand-planting.png

@@ -2,9 +2,26 @@
 layout: default
 ---
 
+{% include banner.html %}
+
+{% if page.intro_paragraph and page.intro_paragraph != '' %}
+<section class="text-center bg-primary pb-5 text-light
+{% if page.banner.image_path == null or page.banner.image_path == '' %}
+mt-n4
+{% endif %}
+">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        {% include page-intro.html %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="bg-light py-5">
   <div class="container">
-    <h1 class="mt-0 mb-4">{{page.title}}</h1>
 
     <div class="card-columns">
 
