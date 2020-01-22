@@ -4,7 +4,7 @@ title: Eco-Friendly Bali is Coming Soon
 permalink: /
 section: home
 intro_icon_image_path: https://img.icons8.com/wired/64/000000/hand-planting.png
-description: Find eco-friendly businesses in Bali with our free green business directory.
+description: Find eco-friendly accommodation, restaurants, and services in Bali with our free green business directory.
 intro_paragraph: >
   Our mission at Eco-Friendly Bali is to empower visitors, locals, and expats to make environmentally-sustainable, earth-friendly choices while on the beautiful island of Bali. This site's seedlings are still being planted, so please check back soon!
 banner:
