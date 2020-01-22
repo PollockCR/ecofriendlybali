@@ -30,6 +30,7 @@ locations:
     address_url: 'https://goo.gl/maps/AKaNPNHsTfndYhf37'
     areas:
       - Ubud
+      - Central Bali
     map: >-
       <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.300731619118!2d115.21092471545107!3d-8.56705449384212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23c21cc151447%3A0x167deff96578d577!2sGreen%20School!5e0!3m2!1sen!2ses!4v1579444947381!5m2!1sen!2ses"

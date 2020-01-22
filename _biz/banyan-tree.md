@@ -11,6 +11,7 @@ services:
   - hotel
   - spa
   - restaurant
+  - swimming pool
 practices:
   - plastic-free
   - resource conservation
@@ -26,6 +27,7 @@ practices:
 locations:
   - areas:
       - Ungasan
+      - South Bali
     address: Jl. Melasti Banjar Kelod, Ungasan, Bali - Indonesia 80364
     address_url: https://goo.gl/maps/TMd85dQouMJ3Efno9
     phones:
