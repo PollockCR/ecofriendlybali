@@ -11,6 +11,7 @@ intro_paragraph: >-
   terraced rice fields.
 services:
   - midrange accommodation
+  - budget accommodation
   - villa
   - restaurant
   - spa
@@ -60,7 +61,7 @@ banner:
   text_shadow: true
   transparent_header: false
 ---
-Villa Manuk is an eco-lodge in a traditional Balinese village in northern Bali. They aim to run their business in harmony with the local village and the environment. It is a great place to stay for nature lovers. While they are not a "certified" eco-lodge, they are taking steps towards becoming one. According to Indonesia Organic, their eco-friendly, green, and organic practices include:
+Villa Manuk is an eco-lodge in a traditional Balinese village in northern Bali. They aim to run their business in harmony with the local village and the environment. It is a great place to stay for nature lovers. While they are not a "certified" eco-lodge, they are taking steps towards becoming one. According to [Indonesia Organic](http://www.indonesiaorganic.com/eco-resorts/villa-manuk), their eco-friendly, green, and organic practices include:
 
 * minimized energy consumption
 * producing their own organic cultivated traditional Bali rice (no pesticides, only usage of neem oil and organic fertilizers)

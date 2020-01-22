@@ -49,7 +49,7 @@ contact:
       url: 'https://twitter.com/greenschoolbali'
     - name: LinkedIn
       url: 'https://www.linkedin.com/company/green-school'
-  website_url: 'https://www.greenschool.org/about/'
+  website_url: 'https://www.greenschool.org/bali/'
 more_info: 'https://www.greenschool.org/environment/'
 image_path: /assets/img/uploads/green-school.jpg
 banner:
@@ -59,4 +59,4 @@ banner:
   text_color: white
   text_shadow: true
 ---
-The Green School is a school without walls that believes in encouraging students to explore their curiosity, innovative, and creative abilities. The school is takes pride in its sense of community and ability to facilitate growth as a whole person. In addition to traditional academic subjects, students also learn "Green School Skills" and "Green School Values". These values include integrity, responsibility, empath, sustainability, peace, equity, community, and trust.
+The Green School is a school without walls that believes in encouraging students to explore their curiosity, innovative, and creative abilities. Their programs include early years, primary school, middle school, high school, specialist subjects, and learning support. The school is takes pride in its sense of community and ability to facilitate growth as a whole person. In addition to traditional academic subjects, students also learn "Green School Skills" and "Green School Values". These values include integrity, responsibility, empath, sustainability, peace, equity, community, and trust.
