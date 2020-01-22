@@ -1,5 +1,5 @@
 ---
-title: Green Education
+title: Green Education in Bali
 service: education
 layout: service
 description: Find eco-friendly courses, classes, workshops, and schools in Bali with our free green business directory.
