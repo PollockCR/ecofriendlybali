@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign has-biz = false %}
 
 {% include banner.html %}
 
@@ -23,10 +24,20 @@ layout: default
 
       {% for biz in site.biz %}
       {% if biz.services contains page.service %}
+      {% assign has-biz = true %}
       {% include archive-loop-item.html %}
       {% endif %}
       {% endfor %}
 
     </div>
+
+    {% if has-biz == false %}
+    <p>
+      No content here yet...
+    </p>
+    <p>
+      Know of {{page.title}}? <a href="/contact">Share it with us.</a>
+    </p>
+    {% endif %}
   </div>
 </section>
