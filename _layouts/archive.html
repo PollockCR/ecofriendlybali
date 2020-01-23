@@ -17,10 +17,10 @@ layout: default
 </section>
 {% endif %}
 
-<section class="bg-light py-5">
+<section class="bg-light">
   <div class="container">
 
-    <div class="card-columns">
+    <div class="card-columns py-5">
       <!-- Service archive -->
       {% if page.type == "service" %}
 
@@ -65,18 +65,16 @@ layout: default
 
     </div>
 
-    {% if has_biz == false %}
-    <p>
-      No content here yet...
-    </p>
-    <p>
-      Know of some options? <a href="/contact">Let us know.</a>
-    </p>
-    {% else %}
-    <p class="mt-4">
-      Know of more options? <a href="/contact">Let us know.</a>
-    </p>
-    {% endif %}
+    <div class="pb-5">
+      {% if has_biz == false %}
+      <p class="mt-n5">
+        No content here yet...
+      </p>
+      {% endif %}
+      <p class="mb-0">
+        Have a suggestion? <a href="/contact">Let us know.</a>
+      </p>
+    </div>
 
   </div>
 </section>
