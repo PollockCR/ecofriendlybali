@@ -30,6 +30,8 @@ collections:
     output: true
   services:
     output: true
+  areas:
+    output: true
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
