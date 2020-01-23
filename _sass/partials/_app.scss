@@ -62,6 +62,9 @@ input, textarea {
 .bg-primary, .bg-dark {
   a {
     color: $white;
+    @include hover {
+      color: $light;
+    }
   }
 }
 
