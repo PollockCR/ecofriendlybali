@@ -54,7 +54,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Areas for This Location (first selection is used in tabs)
             name: areas
             widget: select
-            options: ["Canggu", "Central Bali", "Denpasar", "East Bali", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "North Bali", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Singaraja", "Seminyak", "South Bali", "Tanjung Benoa", "Ubud", "Uluwatu", "Ungasan", "West Bali"]
+            options: ["Canggu", "Central Bali", "Denpasar", "East Bali", "Gili Islands", "Jimbaran", "Kuta", "Legian", "Lovina", "North Bali", "Nusa Dua", "Nusa Lembongan", "Padangbai", "Sanur", "Singaraja", "Seminyak", "South Bali", "Tanjung Benoa", "Toya Bungkah", "Ubud", "Uluwatu", "Ungasan", "West Bali"]
             multiple: true
           - label: "Additional Areas"
             name: "additional-areas"

@@ -19,7 +19,7 @@
         {% elsif include.type == 'Areas' %}
         {% for location in page.locations %}
         {% for area in location.areas %}
-        <h3 class="biz-archive-link"><a href="/location/{{area | slugify }}" class="location btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{area}} </a></h3>
+        <h3 class="biz-archive-link"><a href="/areas/{{area | slugify }}" class="location btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{area}} </a></h3>
         {% endfor %}
         {% endfor %}
         {% endif %}

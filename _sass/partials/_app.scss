@@ -59,6 +59,12 @@ input, textarea {
   min-width: 20rem;
 }
 
+.bg-primary, .bg-dark {
+  a {
+    color: $white;
+  }
+}
+
 /*
 // the body element is our primary layout grid
 body {

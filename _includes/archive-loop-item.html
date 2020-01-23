@@ -9,7 +9,7 @@
     <p class="mb-0">
       {% for location in biz.locations | limit: 6 %}
       {% for area in location.areas %}
-      <a href="/locations/{{area | slugify}}" class="location btn btn-sm btn-info mr-2 mb-2"> {{area}} </a>
+      <a href="/areas/{{area | slugify}}" class="location btn btn-sm btn-info mr-2 mb-2"> {{area}} </a>
       {% endfor %}
       {% endfor %}
       {% for service in biz.services | limit: 6 %}
