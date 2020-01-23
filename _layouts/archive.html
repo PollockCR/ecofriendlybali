@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{% assign has_biz = false %}
+
+{% include banner.html %}
+
+{% include intro-banner.html %}
+
+{% assign content_words = page.content | number_of_words %}
+
+{% if content_words > 0 %}
+<section class="py-5">
+  <div class="container">
+    {{content}}
+  </div>
+</section>
+{% endif %}
+
+<section class="bg-light py-5">
+  <div class="container">
+
+    <div class="card-columns">
+      <!-- Service archive -->
+      {% if page.type == "service" %}
+
+      {% for biz in site.biz %}
+
+      {% if biz.services contains page.service %}
+      {% assign has_biz = true %}
+      {% include archive-loop-item.html %}
+      {% endif %}
+
+      {% endfor %}
+
+      <!-- Area archive -->
+      {% elsif page.type == "area" %}
+
+      {% for biz in site.biz %}
+
+      {% for location in biz.locations %}
+
+      {% if location.areas contains page.area %}
+      {% assign has_biz = true %}
+      {% include archive-loop-item.html %}
+      {% endif %}
+
+      {% endfor %}
+
+      {% endfor %}
+
+      <!-- Practice archive -->
+      {% elsif page.type == "practice" %}
+
+      {% for biz in site.biz %}
+
+      {% if biz.practices contains page.practice %}
+      {% assign has_biz = true %}
+      {% include archive-loop-item.html %}
+      {% endif %}
+
+      {% endfor %}
+
+      {% endif %}
+
+    </div>
+
+    {% if has_biz == false %}
+    <p>
+      No content here yet...
+    </p>
+    <p>
+      Know of {{page.title}}? <a href="/contact">Let us know.</a>
+    </p>
+    {% else %}
+    <p class="mt-4">
+      Know of more {{page.title}}? <a href="/contact">Let us know.</a>
+    </p>
+    {% endif %}
+
+  </div>
+</section>

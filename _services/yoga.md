@@ -1,7 +1,8 @@
 ---
 title: Yoga Retreats, Centers and Courses in Bali
 service: yoga
-layout: service
+layout: archive
+type: service
 description: Find yoga centers, retreats, classes, workshops, and more in Bali with our free green business directory.
 intro_paragraph: >-
   Find the best eco-friendly and eco-conscious yoga classes, courses, retreats, workshops, and centers in Bali.
