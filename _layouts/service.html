@@ -36,8 +36,13 @@ layout: default
       No content here yet...
     </p>
     <p>
-      Know of {{page.title}}? <a href="/contact">Share it with us.</a>
+      Know of {{page.title}}? <a href="/contact">Let us know.</a>
+    </p>
+    {% else %}
+    <p class="mt-4">
+      Know of more {{page.title}}? <a href="/contact">Let us know.</a>
     </p>
     {% endif %}
+
   </div>
 </section>
