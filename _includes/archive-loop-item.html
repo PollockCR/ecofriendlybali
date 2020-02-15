@@ -7,16 +7,18 @@
       <h3> {{biz.title}} </h3>
     </a>
     <p class="mb-0">
+      {% for service in biz.services | limit: 6 %}
+      <a href="/services/{{service | slugify}}" class="service btn btn-sm btn-secondary mr-2 mb-2"> {{service}} </a>
+      {% endfor %}
+
       {% for location in biz.locations | limit: 6 %}
       {% for area in location.areas %}
       <a href="/areas/{{area | slugify}}" class="location btn btn-sm btn-info mr-2 mb-2"> {{area}} </a>
       {% endfor %}
       {% endfor %}
-      {% for service in biz.services | limit: 6 %}
-      <a href="/services/{{service | slugify}}" class="service btn btn-sm btn-secondary mr-2 mb-2"> {{service}} </a>
-      {% endfor %}
+
       {% for practice in biz.practices | limit: 6 %}
-      <a href="/practices/{{practice | slugify}}" class="practice btn btn-sm btn-primary mr-2 mb-2"> {{practice}} </a>
+      <a href="/practices/{{practice | slugify}}" class="practice btn btn-sm btn-primary mr-2 mb-2 disabled"> {{practice}} </a>
       {% endfor %}
       <a href="{{biz.url}}" aria-hidden="true">+ More</a>
     </p>

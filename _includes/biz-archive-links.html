@@ -12,15 +12,17 @@
         {% for service in page.services %}
         <h3 class="biz-archive-link"><a href="/services/{{service | slugify }}" class="service btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{service}} </a></h3>
         {% endfor %}
-        {% elsif include.type == 'Green Practices' %}
-        {% for practice in page.practices %}
-        <h3 class="biz-archive-link"><a href="/practices/{{practice | slugify }}" class="practice btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{practice}} </a></h3>
-        {% endfor %}
+        
         {% elsif include.type == 'Areas' %}
         {% for location in page.locations %}
         {% for area in location.areas %}
         <h3 class="biz-archive-link"><a href="/areas/{{area | slugify }}" class="location btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline"> {{area}} </a></h3>
         {% endfor %}
+        {% endfor %}
+
+        {% elsif include.type == 'Green Practices' %}
+        {% for practice in page.practices %}
+        <h3 class="biz-archive-link"><a href="/practices/{{practice | slugify }}" class="practice btn btn-outline-{{ include.bg-color }} mr-3 btn-archive-outline disabled"> {{practice}} </a></h3>
         {% endfor %}
         {% endif %}
       </div>
