@@ -1,15 +1,15 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light
+  <nav class="navbar navbar-expand-lg navbar-dark
   {% if page.banner.transparent_header %}
   w-100 zindex-fixed navbar-banner
   {% else %}
-  bg-dark
+  bg-primary
   {% endif %}
   ">
   <div class="container">
 
     <a href="{{ '/' | relative_url }}" aria-label="Go to homepage" class="navbar-brand">
-      <h2 class="logo">Eco-Friendly Bali</h2>
+      <h2 class="logo py-2 my-0">Eco-Friendly Bali</h2>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
