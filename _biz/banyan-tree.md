@@ -56,9 +56,9 @@ contact:
     - name: Youku
       url: http://i.youku.com/banyantree
 more_info: https://www.banyantree.com/en/indonesia/ungasan-bali/sustainability
-image_path: /assets/img/uploads/banyan-tree.jpg
+image_path: /assets/img/uploads/biz/banyan-tree.jpg
 banner:
-  image_path: /assets/img/uploads/banyan-tree.jpg
+  image_path: /assets/img/uploads/biz/banyan-tree.jpg
   text:
   transparent_header: false
   darken: true
