@@ -20,7 +20,7 @@
       {% for practice in biz.practices | limit: 6 %}
       <a href="/practices/{{practice | slugify}}" class="practice btn btn-sm btn-primary mr-2 mb-2 disabled"> {{practice}} </a>
       {% endfor %}
-      <a href="{{biz.url}}" aria-hidden="true">+ More</a>
+      <a href="{{biz.url}}" aria-hidden="true" class="d-inline-block">+ More</a>
     </p>
     <p class="mb-0"> {{biz.excerpt | strip_html | truncate:100 }} <a href="{{biz.url}}">Read More</a></p>
   </div>
