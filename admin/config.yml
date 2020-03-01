@@ -35,15 +35,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Description (used in search results; 50-160 characters)", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - label: "Services"
-        name: "services"
-        widget: "select"
-        options: ["accommodation", "budget accommodation", "catering", "consulting", "cooking classes", "eco-store", "education", "guesthouse", "hotel", "hostel", "luxury accommodation", "meditation", "midrange accommodation", "partnerships", "restaurant", "retreats", "spa", "swimming pool", "tours", "villa", "volunteering", "waste management", "yoga"]
-        multiple: true
-      - label: "Additional Services"
-        name: "additional-services"
-        widget: list
-        required: false
+      - {
+          label: 'Services',
+          name: 'services',
+          widget: 'relation',
+          collection: 'services',
+          displayFields: [service],
+          searchFields: [service],
+          valueField: 'service',
+          multiple: true
+        }
       - label: "Green Practices"
         name: "practices"
         widget: "select"
