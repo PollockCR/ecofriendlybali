@@ -1,7 +1,7 @@
 ---
 layout: biz
 title: Banyan Tree
-author: catherine_pollock
+author: Catherine Pollock
 date: '2020-01-17 12:00:00'
 description: The Banyan Tree is a luxury hotel in Ungasan with several eco-friendly practices.
 intro_paragraph: Embracing the Environment, Empowering People

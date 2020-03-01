@@ -1,7 +1,7 @@
 ---
 layout: biz
 title: Jiwa Damai
-author: catherine_pollock
+author: Catherine Pollock
 date: '2020-01-19 17:00:56'
 description: >-
   Jiwa Damai is a hands-on, socially responsible organic garden and retreat center near Ubud, Bali.
