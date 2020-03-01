@@ -151,6 +151,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Background Color
             name: background_color
             widget: select
+            required: false
             options:
               - { label: "Black", value: "black" }
               - { label: "White", value: "white" }
