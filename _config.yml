@@ -32,6 +32,8 @@ collections:
     output: true
   areas:
     output: true
+  authors:
+    output: false
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)

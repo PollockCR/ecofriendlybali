@@ -9,6 +9,8 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 
 #publish_mode: editorial_workflow # Enable drafts
 
+logo_url: "/assets/img/uploads/eco-friendly-bali-logo.png"
+
 collections: # A list of collections the CMS should be able to edit
   # BIZ
   - name: "biz" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -20,11 +22,15 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "biz"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - label: "Author"
-        name: "author"
-        widget: "select"
-        options:
-          - { label: "Catherine Pollock", value: "catherine_pollock" }
+      - {
+        label: 'Author',
+        name: 'author',
+        widget: 'relation',
+        collection: 'authors',
+        displayFields: [name],
+        searchFields: [name],
+        valueField: '{{slug}}',
+      }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Description (used in search results; 50-160 characters)", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
@@ -188,3 +194,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Description (used in search results; 50-160 characters)", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "authors"
+    label: "Authors"
+    folder: "authors"
+    sort: "diplay_name:asc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Website", name: "web", widget: "string"}
