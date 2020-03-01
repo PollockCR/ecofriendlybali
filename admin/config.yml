@@ -219,4 +219,116 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Type", name: "type", widget: "hidden", default: "service"}
       - {label: "Description (used in search results; ~160 characters)", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Icon", name: "icon", widget: "string"}
+      - label: Banner
+        name: banner
+        widget: object
+        fields:
+          - label: Image
+            name: image_path
+            widget: image
+            required: false
+          - label: Text
+            name: text
+            widget: string
+            required: false
+          - label: "Transparent Header"
+            name: transparent_header
+            widget: boolean
+            required: false
+          - label: "Darken Image"
+            name: darken
+            widget: boolean
+            required: false
+          - label: Text Shadow
+            name: text_shadow
+            widget: boolean
+            required: false
+          - label: Text Color
+            name: text_color
+            widget: select
+            required: false
+            options:
+              - { label: "Black", value: "black" }
+              - { label: "White", value: "white" }
+              - { label: "Green", value: "primary" }
+              - { label: "Dark Green", value: "dark" }
+              - { label: "Mauve", value: "secondary" }
+              - { label: "Gray", value: "info" }
+          - label: Full Height
+            name: full_height
+            widget: boolean
+            required: false
+          - label: Background Color
+            name: background_color
+            widget: select
+            required: false
+            options:
+              - { label: "Black", value: "black" }
+              - { label: "White", value: "white" }
+              - { label: "Green", value: "primary" }
+              - { label: "Dark Green", value: "dark" }
+              - { label: "Mauve", value: "secondary" }
+              - { label: "Gray", value: "info" }
+  - name: "areas"
+    label: "Areas"
+    folder: "_areas"
+    sort: "diplay_name:asc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Display Title", name: "title", widget: "string", required: true}
+      - {label: "Area", name: "area", widget: "string", required: true}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "archive"}
+      - {label: "Type", name: "type", widget: "hidden", default: "area"}
+      - {label: "Description (used in search results; ~160 characters)", name: "description", widget: "text", required: true}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - label: Banner
+        name: banner
+        widget: object
+        fields:
+          - label: Image
+            name: image_path
+            widget: image
+            required: false
+          - label: Text
+            name: text
+            widget: string
+            required: false
+          - label: "Transparent Header"
+            name: transparent_header
+            widget: boolean
+            required: false
+          - label: "Darken Image"
+            name: darken
+            widget: boolean
+            required: false
+          - label: Text Shadow
+            name: text_shadow
+            widget: boolean
+            required: false
+          - label: Text Color
+            name: text_color
+            widget: select
+            required: false
+            options:
+              - { label: "Black", value: "black" }
+              - { label: "White", value: "white" }
+              - { label: "Green", value: "primary" }
+              - { label: "Dark Green", value: "dark" }
+              - { label: "Mauve", value: "secondary" }
+              - { label: "Gray", value: "info" }
+          - label: Full Height
+            name: full_height
+            widget: boolean
+            required: false
+          - label: Background Color
+            name: background_color
+            widget: select
+            required: false
+            options:
+              - { label: "Black", value: "black" }
+              - { label: "White", value: "white" }
+              - { label: "Green", value: "primary" }
+              - { label: "Dark Green", value: "dark" }
+              - { label: "Mauve", value: "secondary" }
+              - { label: "Gray", value: "info" }
