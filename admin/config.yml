@@ -58,16 +58,16 @@ collections: # A list of collections the CMS should be able to edit
         name: "locations"
         widget: "list"
         fields:
-        - {
-            label: 'Areas for This Location (first selection is used in tabs)',
-            name: 'areas',
-            widget: 'relation',
-            collection: 'areas',
-            displayFields: [area],
-            searchFields: [area],
-            valueField: 'area',
-            multiple: true
-          }
+          - {
+              label: 'Areas for This Location (first selection is used in tabs)',
+              name: 'areas',
+              widget: 'relation',
+              collection: 'areas',
+              displayFields: [area],
+              searchFields: [area],
+              valueField: 'area',
+              multiple: true
+            }
           - label: Address
             name: address
             widget: string
