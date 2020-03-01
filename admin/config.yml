@@ -209,12 +209,13 @@ collections: # A list of collections the CMS should be able to edit
   - name: "services"
     label: "Services"
     folder: "_services"
-    sort: "diplay_name:asc"
+    identifier_field: service
+    sort: "service:asc"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Display Title", name: "title", widget: "string", required: true}
       - {label: "Service", name: "service", widget: "string", required: true}
+      - {label: "Display Title", name: "title", widget: "string", required: true}
       - {label: "Layout", name: "layout", widget: "hidden", default: "archive"}
       - {label: "Type", name: "type", widget: "hidden", default: "service"}
       - {label: "Description (used in search results; ~160 characters)", name: "description", widget: "text", required: true}
@@ -272,12 +273,13 @@ collections: # A list of collections the CMS should be able to edit
   - name: "areas"
     label: "Areas"
     folder: "_areas"
-    sort: "diplay_name:asc"
+    identifier_field: area
+    sort: "area:asc"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Display Title", name: "title", widget: "string", required: true}
       - {label: "Area", name: "area", widget: "string", required: true}
+      - {label: "Display Title", name: "title", widget: "string", required: true}
       - {label: "Layout", name: "layout", widget: "hidden", default: "archive"}
       - {label: "Type", name: "type", widget: "hidden", default: "area"}
       - {label: "Description (used in search results; ~160 characters)", name: "description", widget: "text", required: true}
