@@ -196,7 +196,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
-      - {label: "Description (used in search results; ~160 characters)", name: "description", widget: "text", required: true}
+      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: false}
+      - {label: "Meta Description", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "services"
