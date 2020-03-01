@@ -29,7 +29,7 @@
       YOAST.setContent({
         title: title,
         description: entry.getIn(['data', 'description']) || '',
-        keyword: entry.getIn(['data', 'yoast_keyword']) || '',
+        keyword: entry.getIn(['data', 'focus_keyword']) || '',
         text: entry.getIn(['data', 'body']) || '',
         titleWidth: title.split('').length * 5 // 5px is an average width of each character ;)
       })

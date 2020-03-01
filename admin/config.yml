@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit
         valueField: 'name',
       }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
-      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: false}
+      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: true}
       - {label: "Meta Description", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -179,7 +179,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Dan Urbanowicz", value: "dan_urbanowicz" }
           - { label: "John Doe", value: "john_doe" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
-      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: false}
+      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: true}
       - {label: "Meta Description", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -196,7 +196,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
-      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: false}
+      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: true}
       - {label: "Meta Description", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -212,7 +212,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Display Title", name: "title", widget: "string", required: true}
       - {label: "Layout", name: "layout", widget: "hidden", default: "archive"}
       - {label: "Type", name: "type", widget: "hidden", default: "service"}
-      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: false}
+      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: true}
       - {label: "Meta Description", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - label: Banner
@@ -277,7 +277,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Display Title", name: "title", widget: "string", required: true}
       - {label: "Layout", name: "layout", widget: "hidden", default: "archive"}
       - {label: "Type", name: "type", widget: "hidden", default: "area"}
-      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: false}
+      - {label: "Focus Keyword", name: "focus_keyword", widget: "string", required: true}
       - {label: "Meta Description", name: "description", widget: "text", required: true}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - label: Banner
