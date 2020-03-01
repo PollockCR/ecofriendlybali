@@ -29,7 +29,7 @@ collections: # A list of collections the CMS should be able to edit
         collection: 'authors',
         displayFields: [name],
         searchFields: [name],
-        valueField: '{{slug}}',
+        valueField: 'name',
       }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Description (used in search results; 50-160 characters)", name: "description", widget: "text", required: true}
@@ -196,7 +196,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "authors"
     label: "Authors"
-    folder: "authors"
+    folder: "_authors"
     sort: "diplay_name:asc"
     create: true
     slug: "{{slug}}"
