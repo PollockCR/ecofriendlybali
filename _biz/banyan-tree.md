@@ -5,8 +5,9 @@ author: Catherine Pollock
 date: '2020-01-17 12:00:00'
 focus_keyword: Banyan Tree
 description: >-
-  The Banyan Tree is a luxury hotel and resort in Ungasan with several
-  eco-friendly practices.
+  The Banyan Tree is a luxury hotel and resort in Ungasan, Bali with several
+  eco-friendly practices. Their sustainability efforts have earned The Banyan
+  Tree several awards.
 intro_paragraph: 'Embracing the Environment, Empowering People'
 services:
   - accommodation
@@ -74,6 +75,6 @@ banner:
   text_color: white
   full_height: false
 ---
-The Banyan Tree is a five-star luxury hotel in Unagasan, Bali. Their earth-friendly practices have earned them several certifications and awards. The [Banyan Tree Global Foundation](http://www.banyantreeglobalfoundation.com) focuses on works to improve their community and environment through sustainable development. According to the hotel's [Sustainability page](https://www.banyantree.com/en/indonesia/ungasan-bali/sustainability):
+The Banyan Tree is a five-star luxury hotel in [Unagasan](/areas/unagasan), Bali. Their earth-friendly practices have earned them several certifications and awards. The Banyan Tree Global Foundation focuses on works to improve their community and environment through sustainable development. 
 
-> Banyan Tree’s sustainability approach emphasises on building in harmony with nature and contributing to the growth and development of the community where each of our hotels are planted.
+The luxury resort’s sustainability efforts focus on building in harmony with nature and contributing to the growth and development of the community where their hotels are located.
