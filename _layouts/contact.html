@@ -8,7 +8,19 @@ layout: default
   {% include page-intro.html %}
 
   {{ content }}
+  <div class="row justify-content-between">
+    <div class="col-12 col-md-8 col-lg-5 my-5" id="contact">
+      <h3>Get in Touch</h3>
 
-  {% include contact-form.html %}
+      {% include contact-form.html %}
+    </div>
+
+    <div class="col-12 col-md-8 col-lg-6 mb-5 mt-0 mt-lg-5" id="share">
+      <h3>Share a Green Business with Us</h3>
+
+      {% include share-form.html %}
+    </div>
+  </div>
+
 
 </div>

@@ -1,0 +1,115 @@
+<form action="https://www.elformo.com/forms/08c29f81-687a-4243-ab06-b2e39da25bc4" method="post" accept-charset="UTF-8" name="share" autocomplete="on">
+  <p class="form-group">
+    <label for="your-first-name">Your First Name</label>
+    <br />
+    <input class="form-control" type="text" name="first-name" id="your-first-name" autocomplete="name" placeholder="Your first name" title="Please enter your first name">
+  </p>
+  <p class="form-group">
+    <label for="your-last-name">Your Last Name</label>
+    <br />
+    <input  class="form-control" type="text" name="last-name" id="your-last-name" autocomplete="last-name" placeholder="Your last name" title="Please enter your last name">
+  </p>
+  <p class="form-group">
+    <label for="your-email">Your Email</label>
+    <br />
+    <input class="form-control" type="email" name="email" id="your-email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </p>
+  <h3>Business Info</h3>
+  <p>A detailed submission is not required, but will help us to add this business to our directory as quickly as possible. To add more details, click "Toggle more fields".</p>
+  <p class="form-group">
+    <label for="biz-name">Business Name (required)</label>
+    <br />
+    <input class="form-control" type="text" name="biz-name" id="biz-name" placeholder="Business Name" title="Please enter your last name" required>
+  </p>
+  <p class="form-group">
+    <label for="description">Description</label>
+    <br />
+    <textarea class="form-control" name="description" id="description" placeholder="Write the business description here" rows="5"></textarea>
+  </p>
+  <p class="form-group">
+    <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseFields" role="button" aria-expanded="false" aria-controls="collapseFields">
+      Toggle more fields
+    </a>
+  </p>
+  <div class="collapse" id="collapseFields">
+    <div class="form-group">
+      <h4><label for="green-description">Green Practices</label></h4>
+      <textarea class="form-control" name="green-description" id="green-description" placeholder="Write a description of the eco-friendly and green business practices in place" rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="eco-link">More Eco-Friendly Info</label>
+      <br>
+      <input class="form-control" type="url" id="eco-link" name="eco-link" placeholder="A link to info about eco-friendly business practices">
+    </div>
+
+    <div class="form-group">
+      <h4><label for="services-description">Services</label></h4>
+      <div class="columns-3 mb-3">
+        {% for service in site.services %}
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox-{{service.service}}" value="">
+          <label class="form-check-label" for="checkbox-{{service.service}}"> {{service.service}}</label>
+        </div>
+        {% endfor %}
+      </div>
+
+      <textarea class="form-control" name="services-description" id="services-description" placeholder="Write a description of services offered, including ones selected above" rows="5"></textarea>
+    </div>
+
+    <h4>Contact Info</h4>
+
+    <div class="form-group">
+      <label for="locations">Locations</label>
+      <textarea class="form-control" name="locations" id="locations" placeholder="List your locations, each on a new line.You can include addresses, town names, Google Maps links, etc." rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label class="form-check-label" for="phone">Phone Numbers</label>
+      <textarea class="form-control" name="phone" id="phone" placeholder="List your phone numbers, each on a new line." rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="website">Website</label>
+      <br>
+      <input class="form-control" type="url" id="website" name="website">
+    </div>
+
+    <h5 for="social-media">Social Media</h5>
+
+    <div class="columns-2">
+      {% for social in page.social_media_options %}
+      <div class="form-group">
+        <label  for="social-{{social.name}}">{{social.name}} URL</label>
+        <br />
+        <input class="form-control" type="url" id="social-{{social.name}}" name="social-{{social.name}}">
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="form-check my-3" id="">
+      <input class="form-check-input" type="checkbox" value="" id="myBusinessCheckbox">
+      <label class="form-check-label" for="myBusinessCheckbox">
+        I own or work for this business
+      </label>
+    </div>
+
+    <div class="form-check mb-3" id="websiteCheckboxGroup">
+      <input class="form-check-input" type="checkbox" value="" id="websiteCheckbox">
+      <label class="form-check-label" for="websiteCheckbox">
+        I am interested in a new website
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Additional Comments</label>
+      <textarea class="form-control" name="comments" id="comments" placeholder="Share any additional information or ask questions here." rows="5"></textarea>
+    </div>
+
+  </div>
+
+  <p class="form-group">
+    <button type="submit" class="btn btn-primary" name="submit">Send Message</button>
+  </p>
+</form>

@@ -10,3 +10,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 });
+
+$(document).ready(function(){
+
+  // show/hide website checkbox on contact page if business owner/employee
+  if ($("#websiteCheckboxGroup").length){
+    $("#websiteCheckboxGroup").hide();
+  }
+
+  if ($("#myBusinessCheckbox").length){
+    $("#myBusinessCheckbox").click(function () {
+      if ($(this).is(":checked")) {
+        $("#websiteCheckboxGroup").show();
+      } else {
+        $("#websiteCheckboxGroup").hide();
+      }
+    });
+  }
+
+});

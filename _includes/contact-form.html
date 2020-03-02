@@ -1,29 +1,30 @@
-<form action="https://www.elformo.com/forms/1ef33f67-8e0e-4bcc-8b8f-79a2f02a8470" method="post" accept-charset="UTF-8" name="contact">
-  <p>
-    <label for="name">First Name</label>
+<form action="https://www.elformo.com/forms/1ef33f67-8e0e-4bcc-8b8f-79a2f02a8470" method="post" accept-charset="UTF-8" name="contact" autocomplete="on">
+  <p class="form-group">
+    <label for="first-name">First Name</label>
     <br />
-    <input type="text" name="first-name" id="first-name" autocomplete="name" placeholder="Your first name" title="Please enter your first name">
+    <input class="form-control" type="text" name="first-name" id="first-name" autocomplete="name" placeholder="Your first name" title="Please enter your first name">
   </p>
-  <p>
-    <label for="name">Last Name</label>
+  <p class="form-group">
+    <label for="last-name">Last Name</label>
     <br />
-    <input type="text" name="last-name" id="last-name" autocomplete="last-name" placeholder="Your last name" title="Please enter your last name">
+    <input class="form-control" type="text" name="last-name" id="last-name" autocomplete="last-name" placeholder="Your last name" title="Please enter your last name">
   </p>
-  <p>
-    <label for="email">Email *</label>
+  <p class="form-group">
+    <label for="email">Email (required)</label>
     <br />
-    <input type="email" name="email" id="email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+    <input class="form-control" type="email" name="email" id="email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </p>
-  <p>
+  <p class="form-group">
     <label for="message">Message</label>
     <br />
-    <textarea name="message" id="message" placeholder="Write your message here" rows="7"></textarea>
+    <textarea class="form-control" name="message" id="message" placeholder="Write your message here" rows="7"></textarea>
   </p>
-  <!-- <p>
+  <!-- <p class="form-group">
     <input id="subscribe" type="checkbox" name="subscribe">
     <label for="subscribe" class="pl-1">Subscribe to our email list</label>
   </p> -->
-  <p>
+  <p class="form-group">
     <button type="submit" class="btn btn-primary" name="submit">Send Message</button>
   </p>
 </form>

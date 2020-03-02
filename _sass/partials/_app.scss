@@ -56,7 +56,7 @@ a:hover i {
 
 // forms
 input, textarea {
-  min-width: 20rem;
+  width: 100%;
 }
 
 .bg-primary, .bg-dark {
@@ -67,7 +67,6 @@ input, textarea {
     }
   }
 }
-
 
 // cards
 .card-columns {
