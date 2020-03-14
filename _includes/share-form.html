@@ -16,6 +16,10 @@
     <input class="form-control" type="email" name="email" id="your-email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </p>
+  <p class="form-group">
+    <input id="subscribe" type="checkbox" name="subscribe" class="form-check-input">
+    <label for="subscribe" class="pl-1 form-check-label">Subscribe to our email list</label>
+  </p>
   <h3>Business Info</h3>
   <p>A detailed submission is not required, but will help us to add this business to our directory as quickly as possible. To add more details, click "Toggle more fields".</p>
   <p class="form-group">
@@ -56,7 +60,7 @@
         {% for service in site.services %}
         <div class="form-check">
           <input class="form-check-input" type="checkbox" name="{{service.service}}" id="checkbox-{{service.service}}" value="">
-          <label class="form-check-label" for="checkbox-{{service.service}}"> {{service.service}}</label>
+          <label class="form-check-label pl-1" for="checkbox-{{service.service}}"> {{service.service}}</label>
         </div>
         {% endfor %}
       </div>
@@ -102,15 +106,15 @@
 
     <div class="form-check mt-2 mb-3" id="">
       <input class="form-check-input" type="checkbox" value="" id="myBusinessCheckbox" name="yes-my-business">
-      <label class="form-check-label" for="myBusinessCheckbox">
+      <label class="form-check-label pl-1" for="myBusinessCheckbox">
         I own or work for this business
       </label>
     </div>
 
     <div class="form-check mb-3" id="websiteCheckboxGroup">
       <input class="form-check-input" type="checkbox" value="" name="yes-new-website" id="websiteCheckbox">
-      <label class="form-check-label" for="websiteCheckbox">
-        I am interested in a new website
+      <label class="form-check-label pl-1" for="websiteCheckbox">
+        I am interested in help with my website
       </label>
     </div>
 
