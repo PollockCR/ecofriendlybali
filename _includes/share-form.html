@@ -23,9 +23,9 @@
     <input class="form-control" type="text" name="biz-name" id="biz-name" placeholder="Business Name" title="Please enter your last name" required>
   </p>
   <p class="form-group">
-    <label for="description">Description</label>
+    <label for="summary">Summary</label>
     <br />
-    <textarea class="form-control" name="description" id="description" placeholder="Write the business description here" rows="5"></textarea>
+    <textarea class="form-control" name="summary" id="summary" placeholder="Write a few sentances summarizing the business. (This will be used as an intro/lead paragraph.)" rows="4"></textarea>
   </p>
   <p class="form-group">
     <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseFields" role="button" aria-expanded="false" aria-controls="collapseFields">
@@ -33,9 +33,14 @@
     </a>
   </p>
   <div class="collapse" id="collapseFields">
+    <p class="form-group">
+      <label for="description">Description</label>
+      <br />
+      <textarea class="form-control" name="description" id="description" placeholder="Write a detailed business description here. Include services and eco-friendly practices. 300+ words recommended." rows="8"></textarea>
+    </p>
     <div class="form-group">
       <h4><label for="green-description">Green Practices</label></h4>
-      <textarea class="form-control" name="green-description" id="green-description" placeholder="Write a description of the eco-friendly and green business practices in place" rows="5"></textarea>
+      <textarea class="form-control" name="green-description" id="green-description" placeholder="List or provide more details for the eco-friendly and green business practices in place." rows="5"></textarea>
     </div>
 
     <div class="form-group">
@@ -49,7 +54,7 @@
       <div class="columns-md-2 mb-3">
         {% for service in site.services %}
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkbox-{{service.service}}" value="">
+          <input class="form-check-input" type="checkbox" name="checkbox-{{service.service}}" id="checkbox-{{service.service}}" value="">
           <label class="form-check-label" for="checkbox-{{service.service}}"> {{service.service}}</label>
         </div>
         {% endfor %}
@@ -76,6 +81,12 @@
       <input class="form-control" type="url" id="website" name="website">
     </div>
 
+    <p class="form-group">
+      <label for="business-email">Business Email</label>
+      <br />
+      <input class="form-control" type="email" name="business-email" id="business-email" autocomplete="email" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
+    </p>
+
     <h5 for="social-media">Social Media</h5>
 
     <div class="columns-md-2">
@@ -89,14 +100,14 @@
     </div>
 
     <div class="form-check mt-2 mb-3" id="">
-      <input class="form-check-input" type="checkbox" value="" id="myBusinessCheckbox">
+      <input class="form-check-input" type="checkbox" value="" id="myBusinessCheckbox" name="my-business-checkbox">
       <label class="form-check-label" for="myBusinessCheckbox">
         I own or work for this business
       </label>
     </div>
 
     <div class="form-check mb-3" id="websiteCheckboxGroup">
-      <input class="form-check-input" type="checkbox" value="" id="websiteCheckbox">
+      <input class="form-check-input" type="checkbox" value="" name="new-website-checkbox" id="websiteCheckbox">
       <label class="form-check-label" for="websiteCheckbox">
         I am interested in a new website
       </label>
