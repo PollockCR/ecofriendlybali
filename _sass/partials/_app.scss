@@ -45,6 +45,10 @@ a.service, a.location, a.practice {
   font-family: $font-family-base;
 }
 
+.adj-biz-li {
+  list-style: none;
+}
+
 // font awesome icons
 a i {
   transition: transform 0.25s;

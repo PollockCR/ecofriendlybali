@@ -128,15 +128,15 @@ layout: default
 </div>
 
 <div class="container">
-  <nav aria-label="Adjacent Posts">
+  <nav aria-label="Adjacent Businesses">
     <ul>
       {% if page.previous.url %}
-      <li>
+      <li class="adj-biz-li">
         <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
       </li>
       {% endif %}
       {% if page.next.url %}
-      <li>
+      <li class="adj-biz-li">
         <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
       </li>
       {% endif %}
