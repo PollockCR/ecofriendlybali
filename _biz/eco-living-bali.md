@@ -1,11 +1,11 @@
 ---
 layout: biz
-title: Eco-Living Bali
+title: Eco Living Bali
 author: Catherine Pollock
 date: '2020-03-14 14:51:52'
-focus_keyword: Eco-Living Bali
+focus_keyword: Eco Living Bali
 description: >-
-  Eco-Living Bali is a sustainable shop that carries eco-friendly home, body,
+  Eco Living Bali is a sustainable shop that carries eco-friendly home, body,
   and lifestyle products. Products from Eco-Living Bali are safe to use and
   environmentally friendly.
 intro_paragraph: >-
