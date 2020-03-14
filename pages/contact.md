@@ -6,6 +6,8 @@ section: contact
 intro_paragraph: |-
 
   [Share](#share) an eco-friendly business with us, give us [feedback](#contact), or just [say hello](#contact)! We'd love to connect.
+
+  Email us at [info@ecofriendlybali.com](mailto:info@ecofriendlybali.com).
 social_media_options:
   - name: Facebook
   - name: Instagram
