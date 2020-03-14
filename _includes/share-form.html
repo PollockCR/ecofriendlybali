@@ -25,7 +25,7 @@
   <p class="form-group">
     <label for="summary">Summary</label>
     <br />
-    <textarea class="form-control" name="summary" id="summary" placeholder="Write a few sentances summarizing the business. (This will be used as an intro/lead paragraph.)" rows="4"></textarea>
+    <textarea class="form-control" name="summary" id="summary" placeholder="Write a few sentances summarizing the business. This will be used as an intro/lead paragraph." rows="4"></textarea>
   </p>
   <p class="form-group">
     <a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseFields" role="button" aria-expanded="false" aria-controls="collapseFields">
@@ -54,7 +54,7 @@
       <div class="columns-md-2 mb-3">
         {% for service in site.services %}
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="checkbox-{{service.service}}" id="checkbox-{{service.service}}" value="">
+          <input class="form-check-input" type="checkbox" name="{{service.service}}" id="checkbox-{{service.service}}" value="">
           <label class="form-check-label" for="checkbox-{{service.service}}"> {{service.service}}</label>
         </div>
         {% endfor %}
@@ -92,22 +92,22 @@
     <div class="columns-md-2">
       {% for social in page.social_media_options %}
       <div class="form-group">
-        <label  for="social-{{social.name}}">{{social.name}} URL</label>
+        <label for="social-{{social.name}}">{{social.name}} URL</label>
         <br />
-        <input class="form-control" type="url" id="social-{{social.name}}" name="social-{{social.name}}">
+        <input class="form-control" type="url" id="social-{{social.name}}" name="-{{social.name}}">
       </div>
       {% endfor %}
     </div>
 
     <div class="form-check mt-2 mb-3" id="">
-      <input class="form-check-input" type="checkbox" value="" id="myBusinessCheckbox" name="my-business-checkbox">
+      <input class="form-check-input" type="checkbox" value="" id="myBusinessCheckbox" name="yes-my-business">
       <label class="form-check-label" for="myBusinessCheckbox">
         I own or work for this business
       </label>
     </div>
 
     <div class="form-check mb-3" id="websiteCheckboxGroup">
-      <input class="form-check-input" type="checkbox" value="" name="new-website-checkbox" id="websiteCheckbox">
+      <input class="form-check-input" type="checkbox" value="" name="yes-new-website" id="websiteCheckbox">
       <label class="form-check-label" for="websiteCheckbox">
         I am interested in a new website
       </label>
