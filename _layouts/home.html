@@ -7,7 +7,7 @@ layout: default
 
 <div class="container py-5">
 
-  <img class="d-inline-block mb-3" src="{{page.intro_icon_image_path}}">
+  <img class="d-inline-block mb-3" src="{{page.intro_icon.image_path}}" alt="{{page.intro_icon.description}}">
 
   <h2 class="mb-3">{{ page.title }}</h2>
 
@@ -15,6 +15,10 @@ layout: default
 
   {{ content }}
 
-  <!-- {% include blog-featured.html %} -->
+</div>
+
+<div class="container">
+
+  {% include areas-services-grid.html %}
 
 </div>
