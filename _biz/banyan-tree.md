@@ -46,6 +46,7 @@ locations:
       allowfullscreen=""></iframe>
 contact:
   website_url: 'https://www.banyantree.com/en/indonesia/ungasan-bali'
+  email: ungasan@banyantree.com
   social_media:
     - name: Facebook
       url: 'https://www.facebook.com/BanyanTreeHotels'

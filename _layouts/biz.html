@@ -57,10 +57,11 @@ layout: default
     <div class="col-xl-6">
       {% if location.address_url or location.address %}
       <p class="mb-4">
-        <i class="fas fa-map-marker-alt fa-2x align-middle mr-3 text-primary"></i>
+
         {% if location.address_url %}
         <a target="_blank" href="{{ location.address_url }}">
           {% endif %}
+          <i class="fas fa-map-marker-alt fa-2x align-middle mr-3 text-primary"></i>
           {% if location.address %}
           {{ location.address }}
           {% endif %}
@@ -81,7 +82,6 @@ layout: default
 
       {% if location.website or page.contact.website_url %}
       <p>
-        <i class="fas fa-globe-asia fa-2x align-middle mb-2 mr-2 text-primary"></i>
         <a href="
         {%- if location.url -%}
         {{location.url}}
@@ -89,6 +89,7 @@ layout: default
         {{page.contact.website_url}}
         {%- endif -%}
         ">
+        <i class="fas fa-globe-asia fa-2x align-middle mb-2 mr-2 text-primary"></i>
         {% if location.url %}
         {{location.website | remove: "https://" | remove: "http://" | remove: "www." }}
         {% else %}
@@ -98,48 +99,66 @@ layout: default
     </p>
     {% endif %}
 
-    {% if page.contact.social_media %}
+    {% if page.contact.email %}
     <p class="mb-4">
-      {% for social in page.contact.social_media %}
 
-      <a href="{{social.url}}" title="{{social.name}}">
-      <i class="fa-2x align-middle mb-3 mr-3 text-primary
-      {% if social.name == 'Youku' %}
-      far fa-play-circle
-      {% else %}
-      fab fa-{{social.name | downcase}}
+      <a href="mailto:{{page.contact.email}}" title="Mail to {{page.contact.email}}">
+        <i class="fa-2x fas fa-envelope align-middle mb-2 mr-2 text-primary"></i>
+        {{page.contact.email}}
+      </a>
+      </p>
       {% endif %}
-      "></i>
-    </a>
 
-    {% endfor %}
-  </p>
-  {% endif %}
+      {% if page.contact.social_media %}
+      <p class="mb-4">
+        {% for social in page.contact.social_media %}
 
-</div>
-<div class="col-xl-6 map">
-  {{ location.map }}
-</div>
-</div>
+        <a href="{{social.url}}" title="{{social.name}}">
+          <i class="fa-2x align-middle mb-3 mr-3 text-primary
+          {% if social.name == 'Youku' %}
+          far fa-play-circle
+          {% else %}
+          fab fa-{{social.name | downcase}}
+          {% endif %}
+          "></i>
+        </a>
+
+        {% endfor %}
+      </p>
+      {% endif %}
+
+    </div>
+    <div class="col-xl-6 map">
+      {{ location.map }}
+    </div>
+  </div>
 
 </div>
 {% endfor %}
 </div>
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <nav aria-label="Adjacent Businesses">
     <ul>
-      {% if page.previous.url %}
-      <li class="adj-biz-li">
-        <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
-      </li>
-      {% endif %}
-      {% if page.next.url %}
-      <li class="adj-biz-li">
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
-      </li>
-      {% endif %}
+
+      <div class="row">
+        <div class="col-6">
+          {% if page.previous.url %}
+          <li class="adj-biz-li">
+            <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
+          </li>
+          {% endif %}
+        </div>
+        <div class="col-6 text-right">
+          {% if page.next.url %}
+          <li class="adj-biz-li">
+            <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
+          </li>
+          {% endif %}
+        </div>
+      </div>
+
     </ul>
   </nav>
 </div>

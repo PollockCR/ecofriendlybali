@@ -42,6 +42,7 @@ locations:
     phones:
       - +62 361 469875
 contact:
+  email: thrivewithpurpose@greenschool.net
   social_media:
     - name: Facebook
       url: 'https://www.facebook.com/greenschool/'

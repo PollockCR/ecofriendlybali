@@ -46,6 +46,7 @@ locations:
     phones:
       - +62 361 8988384
 contact:
+  email: contact@jiwadamai.net
   social_media:
     - name: YouTube
       url: 'https://www.youtube.com/channel/UCCebzYU0fsn5sy52uzoMzWg'

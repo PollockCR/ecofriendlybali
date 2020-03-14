@@ -22,6 +22,7 @@ practices:
 locations:
   - areas:
       - Canggu
+      - South Bali
     address: 'Kerobokan, North Kuta, Badung Regency, Bali 80361'
     address_url: 'https://goo.gl/maps/bbiJihW4VkzAt4Uv5'
     phones:
@@ -35,6 +36,7 @@ locations:
       allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 contact:
   website_url: 'https://ecolivingbali.com'
+  email: info@ecolivingbali.com
   social_media:
     - name: Instagram
       url: 'https://www.instagram.com/ecolivingbali/'

@@ -1,6 +1,6 @@
 ---
 title: Eco-Friendly South Bali
-area: Seminyak
+area: South Bali
 layout: archive
 type: area
 description: Find eco-friendly accommodation, restaurants, services, and things to do in the south of Bali with our free green business directory.

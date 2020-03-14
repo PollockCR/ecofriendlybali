@@ -8,7 +8,7 @@ description: >-
   Villa Manuk is a rural eco-lodge in Northern Bali that works to run their
   business in harmony with the local village and the environment.
 intro_paragraph: >-
-  Off the beaten track, in the foothills that [fringe the north coast of
+  Off the beaten track, in the foothills that fringe the [north coast of
   Bali](http://www.villa-manuk.com/location "Location"), Villa Manuk is
   surrounded by beautiful countryside, tucked away in an idyllic valley of
   terraced rice fields.
@@ -45,6 +45,7 @@ locations:
     phones:
       - +62 813-3866-5533
 contact:
+  email: info@villa-manuk.com
   social_media:
     - name: Facebook
       url: 'http://www.facebook.com/villamanuk/'
