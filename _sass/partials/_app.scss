@@ -80,13 +80,17 @@ input, textarea {
   width: auto;
 }
 
+.form-check-label {
+  display: inline;
+}
+
 .form-check {
   margin-bottom: 0.25rem;
   margin-left: 0;
 }
 
-.form-check-input {
-  @extend .align-middle;
+#elformo_honeypot, #submission-received {
+  display: none;
 }
 
 // cards

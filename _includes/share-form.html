@@ -46,7 +46,7 @@
 
     <div class="form-group">
       <h4><label for="services-description">Services</label></h4>
-      <div class="columns-md-3 mb-3">
+      <div class="columns-md-2 mb-3">
         {% for service in site.services %}
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="checkbox-{{service.service}}" value="">
@@ -78,7 +78,7 @@
 
     <h5 for="social-media">Social Media</h5>
 
-    <div class="columns-2">
+    <div class="columns-md-2">
       {% for social in page.social_media_options %}
       <div class="form-group">
         <label  for="social-{{social.name}}">{{social.name}} URL</label>

@@ -27,5 +27,9 @@ $(document).ready(function(){
       }
     });
   }
+  // Show contact section when submitted
+  if (window.location.href.indexOf("submission-received") > -1) {
+    $('#submission-received').show();
+  }
 
 });

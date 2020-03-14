@@ -48,6 +48,16 @@
   column-count: 2;
 }
 
+@include media-breakpoint-up(md) {
+  .columns-md-3 {
+    column-count: 3;
+  }
+
+  .columns-md-2 {
+    column-count: 2;
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .navbar-banner {
     position: absolute;
@@ -60,12 +70,5 @@
 
   .banner-transparent-header.banner-short {
     height: 70vh;
-  }
-}
-
-
-@include media-breakpoint-up(md) {
-  .columns-md-3 {
-    column-count: 3;
   }
 }
