@@ -68,6 +68,23 @@ input, textarea {
   }
 }
 
+.form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-left: 0;
+  display: inline;
+  width: auto;
+}
+
+.form-check {
+  margin-bottom: 0.25rem;
+  margin-left: 0;
+}
+
+.form-check-input {
+  @extend .align-middle;
+}
+
 // cards
 .card {
   box-shadow: $box-shadow-sm;
