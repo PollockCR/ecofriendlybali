@@ -49,7 +49,7 @@ banner:
 ---
 All of the products at Eco Living Bali are plastic free - from the manufacturing and packaging processes, through store placement. Eco Living Bali aims to raise awareness around the problems of single-use plastics.
 
-Eco Living Bali creates and sources natural, organic, safe, and eco-friendly products. Their eco-shop carries a variety of products, including:
+The eco-shop creates and sources natural, organic, safe, and eco-friendly products. Eco Living Bali carries a variety of products, including:
 
 * [Bags](https://ecolivingbali.com/product-category/bags/)
 * [Bamboo Cotton Swabs](https://ecolivingbali.com/product-category/bamboo-cotton-swabs/)
@@ -82,4 +82,4 @@ Eco Living Bali creates and sources natural, organic, safe, and eco-friendly pro
 * [Toothpaste](https://ecolivingbali.com/product-category/toothpaste/)
 * [Yoga Mat Spray](https://ecolivingbali.com/product-category/yoga-mat-spray/)
 
-Eco Living Bali also helps with [causes](https://ecolivingbali.com/our-causes/) such as Gili Eco Trust, Bamboo Wheelchair, and a weekly beach cleanup.
+By helping with [causes](https://ecolivingbali.com/our-causes/) such as Gili Eco Trust, Bamboo Wheelchair, and a weekly beach cleanup, Eco Friendly Bali works towards a greener Bali.
