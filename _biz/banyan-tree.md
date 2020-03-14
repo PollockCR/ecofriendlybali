@@ -65,9 +65,9 @@ contact:
     - name: Youku
       url: 'http://i.youku.com/banyantree'
 more_info: 'https://www.banyantree.com/en/indonesia/ungasan-bali/sustainability'
-image_path: /assets/img/uploads/biz/banyan-tree.jpg
+image_path: /assets/img/uploads/banyan-tree.jpg
 banner:
-  image_path: /assets/img/uploads/biz/banyan-tree.jpg
+  image_path: /assets/img/uploads/banyan-tree.jpg
   text: null
   transparent_header: false
   darken: true
@@ -75,6 +75,6 @@ banner:
   text_color: white
   full_height: false
 ---
-The Banyan Tree is a five-star luxury hotel in [Unagasan](/areas/unagasan), Bali. Their earth-friendly practices have earned them several certifications and awards. The Banyan Tree Global Foundation focuses on works to improve their community and environment through sustainable development. 
+The Banyan Tree is a five-star luxury hotel in [Unagasan](/areas/unagasan), Bali. Their earth-friendly practices have earned them several certifications and awards. The Banyan Tree Global Foundation focuses on works to improve their community and environment through sustainable development.
 
 The luxury resort’s sustainability efforts focus on building in harmony with nature and contributing to the growth and development of the community where their hotels are located.

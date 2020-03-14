@@ -55,11 +55,11 @@ contact:
       url: 'http://www.instagram.com/villamanuknorthbali'
   website_url: 'http://www.villa-manuk.com'
 more_info: 'http://www.indonesiaorganic.com/eco-resorts/villa-manuk'
-image_path: /assets/img/uploads/biz/villa-manuk.jpg
+image_path: /assets/img/uploads/villa-manuk.jpg
 banner:
   darken: true
   full_height: false
-  image_path: /assets/img/uploads/biz/villa-manuk.jpg
+  image_path: /assets/img/uploads/villa-manuk.jpg
   text_color: white
   text_shadow: true
   transparent_header: false

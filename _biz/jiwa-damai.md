@@ -60,11 +60,11 @@ contact:
         https://www.tripadvisor.com/Hotel_Review-g297701-d1911424-Reviews-Jiwa_Damai_Organic_Garden_Retreat-Ubud_Gianyar_Regency_Bali.html
   website_url: 'http://www.jiwadamai.net'
 more_info: 'http://www.indonesiaorganic.com/eco-resorts/jiwa-damai'
-image_path: /assets/img/uploads/biz/jiwa-damai.jpg
+image_path: /assets/img/uploads/jiwa-damai.jpg
 banner:
   darken: true
   full_height: false
-  image_path: /assets/img/uploads/biz/jiwa-damai.jpg
+  image_path: /assets/img/uploads/jiwa-damai.jpg
   text_color: white
   text_shadow: true
   transparent_header: false

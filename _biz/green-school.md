@@ -55,11 +55,11 @@ contact:
       url: 'https://www.linkedin.com/company/green-school'
   website_url: 'https://www.greenschool.org/bali/'
 more_info: 'https://www.greenschool.org/environment/'
-image_path: /assets/img/uploads/biz/green-school.jpg
+image_path: /assets/img/uploads/green-school.jpg
 banner:
   darken: true
   full_height: false
-  image_path: /assets/img/uploads/biz/green-school.jpg
+  image_path: /assets/img/uploads/green-school.jpg
   text_color: white
   text_shadow: true
 ---
