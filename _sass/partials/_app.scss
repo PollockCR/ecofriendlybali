@@ -69,6 +69,10 @@ input, textarea {
 }
 
 // cards
+.card {
+  box-shadow: $box-shadow-sm;
+}
+
 .card-columns {
 
   @include media-breakpoint-between(sm, md) {
