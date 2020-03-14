@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
+  <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }} - {{ site.title }}{% endif %}</title>
   {% if page.description and page.description != '' %}
   <meta name="description" content="{{page.description}}">
   {% endif %}
