@@ -22,6 +22,9 @@ logo_url: "/assets/img/uploads/eco-friendly-bali-logo.png"
 url: "https://ecofriendlybali.com" # the base hostname & protocol for your site, e.g. https://example.com
 future: true
 
+plugins:
+  - jekyll-sitemap
+
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
 
