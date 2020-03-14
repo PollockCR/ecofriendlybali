@@ -43,8 +43,8 @@ contact:
 more_info: 'https://ecolivingbali.com/about/'
 image_path: /assets/img/uploads/eco-living-bali.jpg
 banner:
-  text: ''
   darken: true
+  text_shadow: true
   image_path: /assets/img/uploads/eco-living-bali.jpg
 ---
 All of the products at Eco Living Bali are plastic free - from the manufacturing and packaging processes, through store placement. Eco Living Bali aims to raise awareness around the problems of single-use plastics.
