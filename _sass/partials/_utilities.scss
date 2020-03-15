@@ -19,7 +19,7 @@
 }
 
 .banner {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 300px);
 }
 
 .banner-short {
@@ -64,6 +64,10 @@
     background-color: transparent;
   }
 
+  .banner {
+    height: calc(100vh - 100px);
+  }
+
   .banner-transparent-header {
     height: 100vh;
   }
@@ -71,4 +75,5 @@
   .banner-transparent-header.banner-short {
     height: 70vh;
   }
+
 }
