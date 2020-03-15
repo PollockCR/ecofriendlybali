@@ -7,12 +7,12 @@ focus_keyword: eco-friendly
 intro_icon:
   image_path: https://img.icons8.com/wired/64/000000/hand-planting.png
   description: Eco-Friendly Bali is growing
-description: Find eco-friendly accommodation, restaurants, shops, and services in Bali with our free green business directory.
+description: Find eco-friendly resorts, hotels, guesthouses, restaurants, shops, and services in Bali with our free eco-business directory.
 intro_paragraph: >
   Our mission at Eco-Friendly Bali is to empower visitors, locals, and expats to make environmentally-sustainable, earth-friendly choices while on the beautiful island of Bali. By sharing responsible, eco-friendly businesses, we can minimize our impact on Bali.
 banner:
   image_path: /assets/img/uploads/forest.jpg
-  text: Find eco-friendly accommodation, restaurants, shops, and services in Bali.
+  text: Find eco-friendly stays, restaurants, shops, and services in Bali.
   transparent_header: true
   darken: false
   text_shadow: true
