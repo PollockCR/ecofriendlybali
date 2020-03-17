@@ -32,4 +32,6 @@ $(document).ready(function(){
     $('#submission-received').show();
   }
 
+  bsCustomFileInput.init()
+
 });
