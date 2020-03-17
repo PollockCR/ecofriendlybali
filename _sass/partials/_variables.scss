@@ -21,3 +21,6 @@ $enable-responsive-font-sizes: true;
 $link-color: $primary;
 $link-hover-decoration: none;
 $link-hover-color: darken($link-color, 25%);
+
+// buttons
+$btn-transition: color .4s ease-in-out, background-color .4s ease-in-out, border-color .4s ease-in-out, box-shadow .4s ease-in-out;
