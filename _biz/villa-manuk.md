@@ -4,6 +4,7 @@ title: Villa Manuk
 author: Catherine Pollock
 date: '2020-01-19 16:30:22'
 focus_keyword: Villa Manuk
+featured: true
 description: >-
   Villa Manuk is a rural eco-lodge in Northern Bali that works to run their
   business in harmony with the local village and the environment.

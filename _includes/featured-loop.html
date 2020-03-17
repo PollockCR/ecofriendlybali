@@ -1,0 +1,14 @@
+<section class="featured-biz">
+  <div class="container pb-5">
+    <div class="text-center text-info">
+      <i class="fas fa-5x fa-briefcase mb-3"></i>
+      <h2 class="mb-4">Featured Eco-Businesses</h2>
+    </div>
+    <div class="card-columns">
+      {% assign featured_biz = site.biz | where: "featured", true %}
+      {% for biz in featured_biz %}
+      {% include archive-loop-item.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
