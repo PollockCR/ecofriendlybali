@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+{% include banner.html %}
 
+<div class="container my-5">
 {% include page-intro.html %}
 
 {{ content }}
+</div>
